@@ -1,0 +1,34 @@
+[
+    {
+        "id": "1",
+        "name":"Common Languages Settings 1",
+        "value":"",
+        "default":"",
+        "type":"text",
+        "override":""
+    },
+    {
+        "id": "2",
+        "name":"Common Languages Settings 2",
+        "value":"",
+        "default":"",
+        "type":"text",
+        "override":""
+    },
+    {
+        "id": "3",
+        "name":"Common Languages Settings 3",
+        "value":"",
+        "default":"",
+        "type":"text",
+        "override":""
+    },
+    {
+        "id": "4",
+        "name":"Common Languages Settings 4",
+        "value":"",
+        "default":"",
+        "type":"text",
+        "override":""
+    }
+]

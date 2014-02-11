@@ -1,0 +1,20 @@
+<nav ng-controller="SidebarController" class="navbar navbar-default" role="navigation">
+    <ul class="nav nav-pills nav-stacked">
+        <!--<li data-ng-class="{active: ($location.path() == '/survey/2121/question' || $location.path() == '/survey/2121/survey') }"><a href="#/survey/2121/question">Questions</a></li>-->
+        <li ng-class="navClass('survey/{{surveyId}}/question' || 'survey/{{surveyId}}/survey')"><a href="#/survey/2121/question">Questions</a></li>
+        <li ng-class="navClass('survey/{{surveyId}}/design')"><a href="#/survey/2121/design">Design</a></li>
+        <li ng-class="navClass('survey/{{surveyId}}/languages_settings')"><a href="#/survey/2121/languages_settings">Languages Settings</a></li>
+        <li ng-class="navClass('survey/{{surveyId}}/advanced_settings')"><a href="#/survey/2121/advanced_settings">Advanced Settings</a></li>
+
+        <li data-ng-class="{active: ($location.path() == '/survey/2121/statistics' || $location.path() == '/survey/2121/questions_statistics' || $location.path() == '/survey/2121/answers_statistics') }">
+            <a href="#/survey/2121/statistics">Statistics <b class="caret"></b></a>
+            <ul data-ng-class="{active: ($location.path() == '/survey/2121/statistics' || $location.path() == '/survey/2121/questions_statistics' || $location.path() == '/survey/2121/answers_statistics') }" class="list-group statistics_subs">
+                <li ng-class="navClass('survey/{{surveyId}}/statistics')" class="list-group-item"><a href="#/survey/2121/statistics">Statistics</a></li>
+                <li ng-class="navClass('survey/{{surveyId}}/questions_statistics')" class="list-group-item"><a href="#/survey/2121/questions_statistics">Questions Statistics</a></li>
+                <li ng-class="navClass('survey/{{surveyId}}/answers_statistics')" class="list-group-item"><a href="#/survey/2121/answers_statistics">Answers Statistics</a></li>
+            </ul>
+        </li>
+        <li ng-class="navClass('survey/{{surveyId}}/quarantine')"><a href="#/survey/2121/quarantine">Quarantine</a></li>
+        <li ng-class="navClass('survey/{{surveyId}}/customers')"><a href="#/survey/2121/customers">Customers</a></li>
+    </ul>
+</nav>

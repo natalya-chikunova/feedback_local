@@ -1,0 +1,30 @@
+[
+    {
+        "language": "de",
+        "link": "static_link_de"
+    },
+    {
+        "language": "en",
+        "link": "static_link_en"
+    },
+    {
+        "language": "fr",
+        "link": "static_link_fr"
+    },
+    {
+        "language": "it",
+        "link": "static_link_it"
+    },
+    {
+        "language": "es",
+        "link": "static_link_es"
+    },
+    {
+        "language": "hu",
+        "link": "static_link_hu"
+    },
+    {
+        "language": "ar",
+        "link": "static_link_ar"
+    }
+]

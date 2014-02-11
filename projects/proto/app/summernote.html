@@ -1,0 +1,38 @@
+<div class="summernote">Hello Summernote</div>
+
+<script>
+    $(document).ready(function() {
+
+        var textarea = $('textarea.tmce');
+        var tHTML = '';
+        if(textarea.length) {
+
+            $(textarea).autoResize();
+            tHTML = $(textarea).val();
+
+            $('.summernote').html(tHTML);
+            $('.summernote').summernote({
+                height: 300,   //set editable area's height
+                focus: true,    //set focus editable area after Initialize summernote
+                codemirror: { // codemirror options
+                    theme: 'monokai'
+                },
+                oninit: function() {
+                    //console.log('Summernote is launched, +html: '+tHTML);
+                }
+
+
+            });
+            $('#save_note').on('click', function(){
+                var sHTML = $('.summernote').code();
+                //console.log('sHTML: '+sHTML);
+                $('textarea.tmce').val(sHTML);
+            });
+
+        }
+
+
+    });
+
+
+</script>

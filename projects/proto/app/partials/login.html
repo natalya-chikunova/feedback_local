@@ -1,0 +1,47 @@
+<div class="row">
+    <div class="col-md-offset-3 col-md-6">
+
+<div style="margin-top: 150px;" class="panel panel-info">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">Login</h3>
+    </div>
+    <div class="panel-body">
+        <div class="alert alert-info">
+            You can enter with <strong>admin/admin</strong> <br/>
+        </div>
+
+        <div class="alert alert-danger" ng-show="submitted && authFailed">
+            <strong>
+                Password or Username is not correct
+            </strong>
+        </div>
+        <form class="form-horizontal" name="loginFrm" ng-submit="login()" role="auth" novalidate>
+            <div class="form-group">
+                <label class="col-sm-2 control-label" translate>Username</label>
+                <div class="col-sm-10" ng-class="{'has-error': submitted && loginFrm.username.$error.required}">
+                    <label class="control-label" ng-show="submitted && (loginFrm.username.$error.required && loginFrm.username.$dirty)">Username is required</label>
+                    <input id="login" ng-model="auth.username" type="text" name="username" class="form-control" placeholder="Enter username" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label" translate>Password</label>
+                <div class="col-sm-10" ng-class="{'has-error': submitted && loginFrm.password.$error.required}">
+                    <label class="control-label" ng-show="submitted && (loginFrm.password.$error.required && loginFrm.password.$dirty)">Password is required</label>
+                    <input id="pass" ng-model="auth.password" name="password" type="password" class="form-control" placeholder="Password" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button ng-click="submitted=true" type="submit" class="btn btn-success">Log In</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+</div>
+
+    </div>
+</div>
+

@@ -1,0 +1,18 @@
+[
+    {
+        "id": "lang",
+        "name":"Languages",
+        "title":"Languages Settings"
+    },
+    {
+        "id": "adv",
+        "name":"Advanced",
+        "title":"Advanced Settings"
+    },
+    {
+        "id": "case",
+        "name":"Case Alerts",
+        "title":"Case Alerts Settings"
+    }
+
+]

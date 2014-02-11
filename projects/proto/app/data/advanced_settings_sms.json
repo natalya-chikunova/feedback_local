@@ -1,0 +1,58 @@
+[
+    {
+        "id": "1",
+        "name":"SMS Text of submit button in survey",
+        "value":"Submit",
+        "default":"Submit",
+        "type":"text",
+        "override":1
+    },
+    {
+        "id": "2",
+        "name": "SMS Text of 'No' button in survey",
+        "value":"No",
+        "default":"No",
+        "type":"text",
+        "override":1
+    },
+    {
+        "id": "3",
+        "name": "SMS Text of 'Yes' button in survey",
+        "value":"Yes",
+        "default":"Yes",
+        "type":"text",
+        "override":0
+    },
+    {
+        "id": "4",
+        "name": "SMS Text of 'Unsubscribe link' button in survey",
+        "value":"Unsubscribe",
+        "default":"Unsubscribe",
+        "type":"text",
+        "override":0
+    },
+    {
+        "id": "5",
+        "name": "SMS Text of 'Read online' button in survey",
+        "value":"Read online",
+        "default":"Read online",
+        "type":"text",
+        "override":0
+    },
+    {
+        "id": "6",
+        "name": "SMS Sms Regular expression",
+        "value":"Regular expression",
+        "default":"Regular expression",
+        "type":"text",
+        "override":0
+    },
+    {
+        "id": "7",
+        "name": "SMS Sms title",
+        "value":"Test 2",
+        "default":"Test 2",
+        "type":"text",
+        "override":0
+    }
+]

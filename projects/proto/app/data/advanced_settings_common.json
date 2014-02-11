@@ -1,0 +1,58 @@
+[
+    {
+        "id": "1",
+        "name":"Common Text of submit button in survey",
+        "value":"Submit",
+        "default":"Submit",
+        "type":"text",
+        "override":1
+    },
+    {
+        "id": "2",
+        "name": "Common Text of 'No' button in survey",
+        "value":"No",
+        "default":"No",
+        "type":"text",
+        "override":1
+    },
+    {
+        "id": "3",
+        "name": "Common Text of 'Yes' button in survey",
+        "value":"Yes",
+        "default":"Yes",
+        "type":"text",
+        "override":0
+    },
+    {
+        "id": "4",
+        "name": "Common Text of 'Unsubscribe link' button in survey",
+        "value":"Unsubscribe",
+        "default":"Unsubscribe",
+        "type":"text",
+        "override":0
+    },
+    {
+        "id": "5",
+        "name": "Common Text of 'Read online' button in survey",
+        "value":"Read online",
+        "default":"Read online",
+        "type":"text",
+        "override":0
+    },
+    {
+        "id": "6",
+        "name": "Common Sms Regular expression",
+        "value":"Regular expression",
+        "default":"Regular expression",
+        "type":"text",
+        "override":0
+    },
+    {
+        "id": "7",
+        "name": "Common Sms title",
+        "value":"Test 2",
+        "default":"Test 2",
+        "type":"text",
+        "override":0
+    }
+]

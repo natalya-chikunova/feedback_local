@@ -1,0 +1,37 @@
+<header ng-show="showHeader()" data-ng-controller="HeaderController" class="navbar navbar-default bs-docs-nav" role="banner">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#/surveys_list" class="navbar-brand">Voc Feedback</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                <li ng-class="navClass('surveys_list')">
+                    <a href="#/surveys_list" translate>Surveys</a>
+                </li>
+                <li ng-class="navClass('data_management')">
+                    <a href="#/data_management/data_management_results" translate>Data Management</a>
+                </li>
+                <li ng-class="navClass('customers_management')">
+                    <a href="#/customers_management/addresses_management" translate>Customers Management</a>
+                </li>
+                <li ng-class="navClass('global_settings')">
+                    <a href="#/global_settings/languages_settings" translate>Global Settings</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form class="navbar-form navbar-left" role="search">
+                        <button style="margin-right: 5px;" ng-repeat="item in translates" class="btn btn-default" ng-class="{'btn-info': item.id === translate}" ng-click="changeLanguage(item.id)" translate >{{item.id}}</button>
+                        <strong style="margin-left: 10px;"> Admin</strong> <button type="submit" class="btn btn-warning" ng-click="logout()"><i class="fa fa-power-off"></i></button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

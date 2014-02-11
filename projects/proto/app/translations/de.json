@@ -1,0 +1,30 @@
+{
+    "Hello": "Hallo",
+    "FOO": "Dies ist ein Paragraph",
+    "english": "englisch",
+    "en": "en",
+    "de": "de",
+    "Global Settings": "Globalen Einstellungen",
+    "Languages Settings": "Sprachen Einstellungen",
+    "Advanced Settings": "Erweiterte Einstellungen",
+    "Case Alerts Settings": "Fall Agentur Einstellungen",
+    "Quarantines Settings": "Quarantäne-Einstellungen",
+    "Sitemap": "Sitemap",
+    "Surveys": "Umfragen",
+    "Data Management": "Daten Geschäftsleitung",
+    "Customers Management": "Kundschaft Geschäftsleitung",
+    "Enable": "Aktivieren",
+    "language": "Sprache",
+
+    "English": "Englisch",
+    "German": "Deutsch",
+    "French": "Französisch",
+    "Italian": "Italienisch",
+    "Spanish": "Spanisch",
+    "Flemish": "Flemisch",
+    "Hungarian": "Ungarisch",
+    "Arabic": "Arabisch",
+    "Mandarin": "Mandarin",
+
+    "PASSED_AS_TEXT": "Hey there! I'm passed as text German!"
+}

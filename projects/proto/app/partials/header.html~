@@ -1,0 +1,22 @@
+<header ng-controller="HeaderController" ng-show="showHeader()">
+    <div class="container">
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                <li><a class="navbar-brand" href="#/surveys_list">Voc Feedback</a></li>
+                <li ng-class="navClass('surveys_list')"><a href="#/surveys_list" translate>Surveys</a></li>
+                <li ng-class="navClass('data_management')"><a href="#/data_management" translate>Data Management</a></li>
+                <li ng-class="navClass('customers_management')"><a href="#/customers_management/addresses_management" translate>Customers Management</a></li>
+                <li ng-class="navClass('global_settings')"><a href="#/global_settings/languages_settings" translate>Global Settings</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form class="navbar-form navbar-left" role="search">
+                        <button class="btn btn-default" ng-class="{'btn-info': $translate.uses()=='en'}" ng-click="changeLanguage('en')" translate>en</button>&nbsp;
+                        <button class="btn btn-default" ng-class="{'btn-info': toog=='de'}" ng-click="changeLanguage('de')" translate>de</button>
+                        <strong style="padding-left: 20px;"> Username</strong> <button type="submit" class="btn btn-warning" ng-click="logout()"><i class="fa fa-power-off"></i></button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

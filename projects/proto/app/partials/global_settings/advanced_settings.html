@@ -1,0 +1,95 @@
+<div class="row">
+    <div class="col-md-2">
+        <div ng-include src="'partials/settings_sidepanel.html'"></div>
+
+    </div>
+    <div class="col-md-10">
+
+        <ol class="breadcrumb">
+            <li><a href="#" translate>Global Settings</a></li>
+            <li class="active" translate>Advanced Settings</li>
+        </ol>
+
+        <!-- Channels Tabs -->
+        <ul class="nav nav-pills  navbar-right">
+            <li ng-repeat="tab in channelsTabs" ng-class="{'active': tab.id == channelSelected}"><a href ng-click="switchTabTo($index)">{{tab.title}}</a>
+            </li>
+        </ul>
+
+
+        <h3 translate>Advanced Settings</h3>
+        <br/><br/>
+
+        <div class="alert alert-warning">
+            <ul>
+                <li><strong>Check checkbox 'Override'</strong> to be able change settings values</li>
+                <li>Icon &nbsp;&nbsp;<span class="glyphicon glyphicon-warning-sign"></span>&nbsp;&nbsp; is shown for changed and not saved
+                    settings values
+                </li>
+            </ul>
+
+        </div>
+
+
+        <div class="panel panel-default">
+
+        <div class="panel-body" ng-show="advanced_settings">
+        <div class="table-responsive">
+        <table class="table table-hover table-striped">
+        <thead>
+        <tr>
+            <th style="width: 10%;">Override</th>
+            <th style="width: 90%;">Title</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="field in advanced_settings">
+            <td colspan="2">
+                <form-field ng-model="formModel[field.attr]" field="field" ></form-field>
+            </td>
+
+        </tr>
+        </tbody>
+        </table>
+        </div>
+
+
+        <p>
+        <div class="col-sm-3"></div>
+        <div class="col-sm-9">
+            <p class="text-right">
+                <!--<button type="button" class="btn btn-default">Cancel</button>-->
+                <button ng-click="save()" type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+            </p>
+        </div>
+        </p>
+
+        </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<div class="modal modal-wide fade" id="modal-wysiwyg">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">HTML email invitation</h4>
+            </div>
+            <div class="modal-body">
+
+                <div ng-include src="'summernote.html'"></div>
+                <!--<div ng-include src="'wysiwyg.html'"></div>-->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button id="save_note" type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script src="lib/jquery/scrollup.js"></script>

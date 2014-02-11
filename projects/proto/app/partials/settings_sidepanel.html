@@ -1,0 +1,11 @@
+<nav ng-controller="SidebarController" class="navbar navbar-default" role="navigation">
+    <ul class="nav nav-pills nav-stacked">
+        <li ng-class="navClass('global_settings/languages_settings')"><a href="#/global_settings/languages_settings" translate>Languages Settings</a></li>
+        <li ng-class="navClass('global_settings/advanced_settings')"><a href="#/global_settings/advanced_settings" translate>Advanced Settings</a></li>
+        <!--<li data-ng-class="{active: ($location.path() == '/global_settings/case_alerts_settings') || ($location.path() == '/global_settings/case_alert_conditions') }">-->
+            <!--<a href="#/global_settings/case_alerts_settings" translate>Case Alerts Settings</a></li>-->
+        <li ng-class="navClass('global_settings/case_alert')"><a href="#/global_settings/case_alerts_settings" translate>Case Alerts Settings</a></li>
+        <li ng-class="navClass('global_settings/quarantines_settings')"><a href="#/global_settings/quarantines_settings" translate>Quarantines Settings</a></li>
+
+    </ul>
+</nav>

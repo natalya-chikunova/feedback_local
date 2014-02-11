@@ -1,0 +1,23 @@
+<nav ng-controller="SidebarController" class="navbar navbar-default">
+    <ul class="nav nav-pills nav-stacked">
+        <li ng-class="navClass('data_management/data_management_results')"><a href="#/data_management/data_management_results">Results</a></li>
+
+        <li>
+            <a href="#/data_management/import_history">Import <b class="caret"></b></a>
+            <ul data-ng-class="{active: ($location.path() == '/data_management/import_history' || $location.path() == '/data_management/add_import') }" class="list-group statistics_subs">
+                <li ng-class="navClass('data_management/import_history')" class="list-group-item"><a href="#/data_management/import_history">Import History</a></li>
+                <li ng-class="navClass('data_management/add_import')" class="list-group-item"><a href="#/data_management/add_import">Add new import</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#/data_management/export_queue">Export <b class="caret"></b></a>
+            <ul data-ng-class="{active: ($location.path() == '/data_management/export_queue' || $location.path() == '/data_management/exporters_list' || $location.path() == '/data_management/export_schedule') }" class="list-group statistics_subs">
+                <li ng-class="navClass('data_management/export_queue')" class="list-group-item"><a href="#/data_management/export_queue">Export Queue</a></li>
+                <li ng-class="navClass('data_management/exporters_list')" class="list-group-item"><a href="#/data_management/exporters_list">Exporters List</a></li>
+                <li ng-class="navClass('data_management/export_schedule')" class="list-group-item"><a href="#/data_management/export_schedule">Export Schedule</a></li>
+            </ul>
+        </li>
+
+    </ul>
+</nav>

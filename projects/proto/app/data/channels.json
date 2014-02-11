@@ -1,0 +1,17 @@
+[
+    {
+        "id": "web",
+        "title": "Web",
+        "active": 1
+    },
+    {
+        "id": "sms",
+        "title": "Sms",
+        "active": 0
+    },
+    {
+        "id": "ivr",
+        "title": "Ivr",
+        "active": 0
+    }
+]

@@ -1,0 +1,34 @@
+{
+    "Hello": "Hello",
+    "FOO": "This is a paragraph",
+    "english": "english",
+    "en": "en",
+    "de": "de",
+    "german": "german",
+    "Global Settings": "Global Settings",
+    "Languages Settings": "Languages Settings",
+    "Advanced Settings": "Advanced Settings",
+    "Case Alerts Settings": "Case Alerts Settings",
+    "Quarantines Settings": "Quarantines Settings",
+    "Sitemap": "Sitemap",
+    "Surveys": "Surveys",
+    "Data Management": "Data Management",
+    "Customers Management": "Customers Management",
+    "Enable": "Enable",
+    "language": "language",
+
+
+    "English": "English",
+    "German": "German",
+    "French": "French",
+    "Italian": "Italian",
+    "Spanish": "Spanish",
+    "Flemish": "Flemisch",
+    "Hungarian": "Hungarian",
+    "Arabic": "Arabic",
+    "Mandarin": "Mandarin",
+
+    "PASSED_AS_TEXT": "Hey there! I'm passed as text value!"
+
+
+}

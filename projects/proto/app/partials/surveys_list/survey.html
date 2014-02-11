@@ -1,0 +1,311 @@
+<div class="row">
+    <div class="col-md-2">
+        <div ng-include src="'partials/sidepanel.html'"></div>
+    </div>
+    <div class="col-md-10">
+        <ul class="nav nav-pills navbar-right">
+            <li class="active"><a href="javascript:void(0);">Web</a></li>
+            <li><a href="javascript:void(0);">Sms</a></li>
+            <li><a href="javascript:void(0);">IVR</a></li>
+        </ul>
+        <br/>
+        <h2>Survey test 2
+            <small>
+                <button class="btn"  data-toggle="modal" data-target="#modal-survey-title-edit"><i class="fa fa-edit fa-lg"></i></button>
+            </small>
+        </h2>
+        <div>
+            <h4>
+                Status: <span class="label label-success"> Active</span>
+                <button class="btn" data-toggle="modal" data-target="#modal-status-edit"><i class="fa fa-edit fa-lg"></i></button>
+
+            </h4>
+        </div>
+        <div class="row">
+            <p></p>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <p>
+                <ul class="nav nav-pills">
+                    <li class="active"><a href="javascript:void(0);">En</a></li>
+                    <li><a href="javascript:void(0);">De</a></li>
+                    <li><a href="javascript:void(0);">Es</a></li>
+                    <li><a href="javascript:void(0);">It</a></li>
+                </ul>
+                </p>
+            </div>
+            <div class="panel-body">
+                <div class="col-md-7">
+                    <div id="nestable-menu">
+                        <button type="button" class="btn btn-default" data-action="expand-all">Expand All</button>
+                        <button type="button" class="btn btn-default" data-action="collapse-all">Collapse All</button>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <p class="text-right">
+                    <label class="checkbox-inline">
+                        <input type="checkbox" checked> Change order
+                    </label>
+                    <button data-toggle="modal" data-target="#modal-question-add" type="button" class="btn btn-success"><span
+                            class="glyphicon glyphicon-plus-sign"></span> Add Question
+                    </button>
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="well">
+                <ul>
+                    <li>
+                    You can drag and drop questions to rearrange their order
+                    </li>
+                    <li>
+                    Pull right to make a question sub-level
+                    </li>
+                    <li>
+                        Questions list depth is limited by 2 sub-levels
+                    </li>
+                </ul>
+                </div>
+
+                <div class="dd" id="nestable">
+                    <ol class="dd-list">
+                        <li class="dd-item" data-id="1">
+                            <div class="dd-handle">
+                                Question 1
+                                <span class="badge">
+                                    <a class="modal-preview" href="#" data-toggle="modal" data-target="#modal-question-preview"><i class="fa fa-eye fa-lg router-pointer"></i></a>
+                                    &nbsp; <a href="#/surveys_list/question"><i class="fa fa-edit fa-lg router-pointer"></i></a>
+                                </span>
+
+                            </div>
+                        </li>
+                        <li class="dd-item" data-id="2">
+                            <div class="dd-handle">
+                                Question 2
+                                <span class="badge">
+                                    <a class="modal-preview" href="#" data-toggle="modal" data-target="#modal-question-preview"><i class="fa fa-eye fa-lg router-pointer"></i></a>
+                                    &nbsp; <a href="#/surveys_list/question"><i class="fa fa-edit fa-lg router-pointer"></i></a>
+                                </span>
+                            </div>
+                            <ol class="dd-list">
+                                <li class="dd-item" data-id="3"><div class="dd-handle">
+                                    Question 3
+                                    <span class="badge">
+                                    <a class="modal-preview" href="#" data-toggle="modal" data-target="#modal-question-preview"><i class="fa fa-eye fa-lg router-pointer"></i></a>
+                                    &nbsp; <a href="#/surveys_list/question"><i class="fa fa-edit fa-lg router-pointer"></i></a>
+                                </span>
+                                </div></li>
+                                <li class="dd-item" data-id="4"><div class="dd-handle">
+                                    Question 4
+                                    <span class="badge">
+                                    <a class="modal-preview" href="#" data-toggle="modal" data-target="#modal-question-preview"><i class="fa fa-eye fa-lg router-pointer"></i></a>
+                                    &nbsp; <a href="#/surveys_list/question"><i class="fa fa-edit fa-lg router-pointer"></i></a>
+                                </span>
+                                </div></li>
+                                <li class="dd-item" data-id="5">
+                                    <div class="dd-handle">
+                                        Question 5
+                                        <span class="badge">
+                                        <a class="modal-preview" href="#" data-toggle="modal" data-target="#modal-question-preview"><i class="fa fa-eye fa-lg router-pointer"></i></a>
+                                        &nbsp; <a href="#/surveys_list/question"><i class="fa fa-edit fa-lg router-pointer"></i></a>
+                                    </span>
+                                    </div>
+                                    <ol class="dd-list">
+                                        <li class="dd-item" data-id="6"><div class="dd-handle">
+                                            Question 6
+                                            <span class="badge">
+                                                <a class="modal-preview" href="#" data-toggle="modal" data-target="#modal-question-preview"><i class="fa fa-eye fa-lg router-pointer"></i></a>
+                                                &nbsp; <a href="#/surveys_list/question"><i class="fa fa-edit fa-lg router-pointer"></i></a>
+                                            </span>
+                                        </div></li>
+                                        <li class="dd-item" data-id="7"><div class="dd-handle">
+                                            Question 7
+                                            <span class="badge">
+                                                <a class="modal-preview" href="#" data-toggle="modal" data-target="#modal-question-preview"><i class="fa fa-eye fa-lg router-pointer"></i></a>
+                                                &nbsp; <a href="#/surveys_list/question"><i class="fa fa-edit fa-lg router-pointer"></i></a>
+                                            </span>
+                                        </div></li>
+                                        <li class="dd-item" data-id="8"><div class="dd-handle">
+                                            Question 8
+                                            <span class="badge">
+                                                <a class="modal-preview" href="#" data-toggle="modal" data-target="#modal-question-preview"><i class="fa fa-eye fa-lg router-pointer"></i></a>
+                                                &nbsp; <a href="#/surveys_list/question"><i class="fa fa-edit fa-lg router-pointer"></i></a>
+                                            </span>
+                                        </div></li>
+                                    </ol>
+                                </li>
+                                <li class="dd-item" data-id="9"><div class="dd-handle">
+                                    Question 9
+                                    <span class="badge">
+                                    <a class="modal-preview" href="#" data-toggle="modal" data-target="#modal-question-preview"><i class="fa fa-eye fa-lg router-pointer"></i></a>
+                                    &nbsp; <a href="#/surveys_list/question"><i class="fa fa-edit fa-lg router-pointer"></i></a>
+                                </span>
+                                </div></li>
+                                <li class="dd-item" data-id="10"><div class="dd-handle">
+                                    Question 10
+                                    <span class="badge">
+                                    <a class="modal-preview" href="#" data-toggle="modal" data-target="#modal-question-preview"><i class="fa fa-eye fa-lg router-pointer"></i></a>
+                                    &nbsp; <a href="#/surveys_list/question"><i class="fa fa-edit fa-lg router-pointer"></i></a>
+                                </span>
+                                </div></li>
+                            </ol>
+                        </li>
+                        <li class="dd-item" data-id="11">
+                            <div class="dd-handle">
+                                Question 11
+                                <span class="badge">
+                                    <a class="modal-preview" href="#" data-toggle="modal" data-target="#modal-question-preview"><i class="fa fa-eye fa-lg router-pointer"></i></a>
+                                    &nbsp; <a href="#/surveys_list/question"><i class="fa fa-edit fa-lg router-pointer"></i></a>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="dd-item" data-id="12">
+                            <div class="dd-handle">
+                                Question 12
+                                <span class="badge">
+                                    <a class="modal-preview" href="#" data-toggle="modal" data-target="#modal-question-preview"><i class="fa fa-eye fa-lg router-pointer"></i></a>
+                                    &nbsp; <a href="#/surveys_list/question"><i class="fa fa-edit fa-lg router-pointer"></i></a>
+                                </span>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="modal fade" id="modal-survey-title-edit">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Edit title</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Title</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="modal-status-edit">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Change status</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="radio">
+                                <h4><label>
+                                    <input type="radio" name="optionsRadios" checked>
+                                    <span class="label label-success">Active</span>
+                                </label></h4>
+                            </div>
+                            <div class="radio">
+                                <h4><label>
+                                    <input type="radio" name="optionsRadios" >
+                                    <span class="label label-warning">Paused</span>
+                                </label></h4>
+                            </div>
+                            <div class="radio">
+                                <h4><label>
+                                    <input type="radio" name="optionsRadios" >
+                                    <span class="label label-default">Stopped</span>
+                                </label></h4>
+                            </div>
+                            <div class="radio">
+                                <h4><label>
+                                    <input type="radio" name="optionsRadios" >
+                                    <span class="label label-danger">Deleted</span>
+                                </label></h4>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="modal-question-preview">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Question 1</h4>
+            </div>
+            <div class="modal-body">
+                <ul class="nav nav-pills nav-justified">
+                    <li class="active"><a href="javascript:void(0);">Desktop</a></li>
+                    <li><a href="javascript:void(0);">Tablet</a></li>
+                    <li><a href="javascript:void(0);">Mobile</a></li>
+                </ul>
+                <br>
+                Will be soon &hellip;
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="modal-question-add">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Add new question</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Title</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" value="">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script src="lib/jquery/jquery.nestable.js"></script>
+<script src="lib/jquery/jquery.nestable-demo.js"></script>
+<script src="lib/jquery/scrollup.js"></script>

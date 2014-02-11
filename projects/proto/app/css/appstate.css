@@ -1,0 +1,223 @@
+
+.navbar-fixed-top {
+    border: 1px solid #e7e7e7;
+    margin: 0 auto;
+    height: 51px;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+/*.navbar .navbar-nav {*/
+    /*display: inline-block;*/
+    /*float: none;*/
+    /*min-width: 1170px;*/
+/*}*/
+
+/*.navbar .navbar-collapse {*/
+    /*text-align: center;*/
+/*}*/
+
+.crosshair {
+    cursor: crosshair;
+}
+
+.badge {
+    background-color: #ffffff;
+}
+
+.scrollup {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 10px;
+    right: 100px;
+    display: none;
+}
+
+.scrollup button {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width:1024px) {
+    .scrollup {right: 1px!important;}
+}
+@media (max-width: 767px) {
+    .scrollup {display:none!important;}
+}
+
+.autocomplete-suggestions {
+    border: 1px solid #999;
+    background: #fff;
+    cursor: default;
+    overflow: auto;
+}
+
+.autocomplete-suggestion {
+    padding: 10px 5px;
+    font-size: 1.2em;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.autocomplete-selected {
+    background: #f0f0f0;
+}
+
+.autocomplete-suggestions strong {
+    font-weight: normal;
+    color: #3399ff;
+}
+
+.relative-block {
+    position: relative;
+}
+
+.notification-block {
+    display: none;
+    width: 300px;
+    position: absolute;
+    right: -16px;
+    z-index: 200;
+}
+
+#sliding-panel {
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    background: #F8F8F8;
+    padding: 20px;
+    width: 300px;
+    min-height: 300px;
+    position: absolute;
+    right: -16px;
+    top: 10px;
+    z-index: 100;
+    display: none;
+}
+
+.surveys-list .progress-bar,
+.surveys-list .progress {
+    height: 10px;
+    width: 100px;
+}
+.surveys-list .progress,
+.surveys-list .progress-bar-label {
+    display: inline-block;
+}
+.surveys-list .progress {
+    margin: 0;
+}
+
+.thumbnail {
+    position:relative;
+    /*overflow:hidden;*/
+}
+
+.caption {
+    position:absolute;
+    top:0;
+    right:0;
+    background:rgba(66, 139, 202, 0.55);
+    width:100%;
+    height:100%;
+    padding:2%;
+    /*display: none;*/
+    text-align:center;
+    color:#fff !important;
+    z-index:2;
+}
+
+i[rel=tooltip]{
+    cursor: pointer;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.thumbnail .dropdown{
+    float: right;
+    margin: -5px -8px 0 0;
+}
+.thumbnail .dropdown a:hover,
+.thumbnail .dropdown a:active,
+.thumbnail .dropdown a:visited,
+.thumbnail .dropdown a:focus{
+    text-decoration: none;
+    outline: none;
+}
+.thumbnail .dropdown-menu{
+    min-width: 20px;
+    left: 20px;
+    top: 20px;
+}
+.thumbnail .dropdown i.fa-cog {
+    color: #eeeeee;
+}
+
+.list-group-item.active {
+    background: #5bc0de;
+}
+.list-group-item.active a{
+    color: #fff;
+}
+.statistics_subs{
+    display: none;
+}
+.statistics_subs.active {
+    display: block;
+}
+
+.rotate_180 {
+    -webkit-transform: rotate(180deg);     /* Chrome and other webkit browsers */
+    -moz-transform: rotate(180deg);        /* FF */
+    -o-transform: rotate(180deg);          /* Opera */
+    -ms-transform: rotate(180deg);         /* IE9 */
+    transform: rotate(180deg);             /* W3C complaint browsers */
+}
+
+.nav-pills > li.selected > a, .nav-pills > li.selected > a:hover, .nav-pills > li.selected > a:focus
+{
+    color: #72d1ed;
+    text-decoration: underline;
+    /*background-color: #fff;*/
+    /*border: 4px solid #72d1ed;*/
+}
+
+.growl {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    float: right;
+    width: 250px;
+}
+
+.growl-item.ng-enter,
+.growl-item.ng-leave {
+    -webkit-transition:0.5s linear all;
+    -moz-transition:0.5s linear all;
+    -o-transition:0.5s linear all;
+    transition:0.5s linear all;
+}
+
+.growl-item.ng-enter,
+.growl-item.ng-leave.ng-leave-active {
+    opacity:0;
+}
+.growl-item.ng-leave,
+.growl-item.ng-enter.ng-enter-active {
+    opacity:1;
+
+}
+#modal-wysiwyg .modal-dialog {
+    /*min-width: 700px;*/
+}
+.modal.modal-wide .modal-dialog {
+    width: 900px;
+}
+.modal-wide .modal-body {
+    overflow-y: auto;
+}

@@ -1,0 +1,179 @@
+<div class="row">
+<div class="col-md-2">
+    <div ng-include src="'partials/settings_sidepanel.html'"></div>
+
+</div>
+<div class="col-md-10">
+<ol class="breadcrumb">
+    <li><a href="#">Global Settings</a></li>
+    <li class="active">Quarantines Settings</li>
+</ol>
+
+<ul class="nav nav-pills navbar-right">
+    <li class="active"><a href="javascript:void(0);">Web</a></li>
+    <li><a href="javascript:void(0);">Sms</a></li>
+    <li><a href="javascript:void(0);">IVR</a></li>
+</ul>
+<br/>
+<h3>Quarantines Settings</h3>
+
+
+<div class="row">
+    <div class="col-sm-9"></div>
+    <div class="col-sm-3 text-right"><button type="button" class="btn btn-success btn-lg  queue_edit"><span
+            class="glyphicon glyphicon-plus-sign"></span> Add Settings
+    </button>
+    </div>
+</div>
+<br/>
+
+<form class="form-horizontal" role="form">
+<div class="form-group">
+    <label class="col-sm-2 control-label">Affected Survey</label>
+
+    <div class="col-sm-10">
+        <select class="form-control">
+            <option value="1">Choose Survey</option>
+            <option value="1">Survey title test 1</option>
+            <option value="1">Survey title test 2</option>
+        </select>
+    </div>
+</div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Blocked by Survey</label>
+
+        <div class="col-sm-10">
+            <select class="form-control">
+                <option value="1">Choose Survey</option>
+                <option value="1">Survey title test 1</option>
+                <option value="1">Survey title test 2</option>
+            </select>
+        </div>
+    </div>
+</form>
+<br/>
+
+<table class="table table-striped table-hover">
+    <thead>
+    <tr class="info">
+        <th>Affected Survey</th>
+        <th>Blocked by Survey</th>
+        <th>For Days</th>
+        <th></th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Survey title test 1</td>
+        <td>Survey title test 3</td>
+        <td>3</td>
+        <td>
+            <button class="btn btn-info queue_edit"><i class="fa fa-edit fa-lg"></i></button>
+        </td>
+        <td>
+            <button class="btn btn-danger"><i class="fa fa-trash-o fa-lg"></i></button>
+        </td>
+    </tr>
+    <tr>
+        <td>Survey title test 2</td>
+        <td>Survey title test 5</td>
+        <td>5</td>
+        <td>
+            <button class="btn btn-info queue_edit"><i class="fa fa-edit fa-lg"></i></button>
+        </td>
+        <td>
+            <button class="btn btn-danger"><i class="fa fa-trash-o fa-lg"></i></button>
+        </td>
+    </tr>
+    <tr>
+        <td>Survey title test 3</td>
+        <td>Survey title test 3</td>
+        <td>3</td>
+        <td>
+            <button class="btn btn-info queue_edit"><i class="fa fa-edit fa-lg"></i></button>
+        </td>
+        <td>
+            <button class="btn btn-danger"><i class="fa fa-trash-o fa-lg"></i></button>
+        </td>
+    </tr>
+    <tr>
+        <td>Survey title test 4</td>
+        <td>Survey title test 4</td>
+        <td>4</td>
+        <td>
+            <button class="btn btn-info queue_edit"><i class="fa fa-edit fa-lg"></i></button>
+        </td>
+        <td>
+            <button class="btn btn-danger"><i class="fa fa-trash-o fa-lg"></i></button>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+
+<div class="panel panel-info queue_edit_block" style="display: none;">
+    <div class="panel-heading">Edit Survey Quarantine
+        <button type="button" class="close close_block">&times;</button>
+    </div>
+    <div class="panel-body">
+        <form class="form-horizontal" role="form">
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Affected Survey</label>
+
+                <div class="col-sm-10">
+                    <select class="form-control">
+                        <option value="1">Choose Survey</option>
+                        <option value="1">Survey title test 1</option>
+                        <option value="1">Survey title test 2</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Blocked by Survey</label>
+
+                <div class="col-sm-10">
+                    <select class="form-control">
+                        <option value="1">Choose Survey</option>
+                        <option value="1">Survey title test 1</option>
+                        <option value="1">Survey title test 2</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">For Days</label>
+
+                <div class="col-sm-5">
+                    <input class="form-control" type="text" value="" placeholder="5"/>
+                </div>
+                <div class="col-sm-5"></div>
+            </div>
+
+        </form>
+        <br/>
+    </div>
+    <div class="panel-footer">
+        <div class="col-sm-3">
+            <p class="text-right">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
+            </p>
+        </div>
+        <div class="col-sm-9">
+            <p class="text-right">
+                <button type="button" class="btn btn-default close_block">Cancel</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+            </p>
+        </div>
+        <div class="clearfix"></div>
+
+    </div>
+</div>
+
+
+</div>
+</div>
+
+
+<script src="lib/jquery/scrollup.js"></script>

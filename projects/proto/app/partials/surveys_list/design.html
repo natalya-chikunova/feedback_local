@@ -1,0 +1,357 @@
+<div class="row">
+    <div class="col-md-2">
+        <div ng-include src="'partials/sidepanel.html'"></div>
+
+    </div>
+    <div class="col-md-10">
+
+    <ol class="breadcrumb">
+        <li><a href="#/surveys_list">Surveys</a></li>
+        <li><a href="#/surveys_list/survey">Survey title test 2</a></li>
+        <li class="active">Design</li>
+    </ol>
+
+        <ul class="nav nav-pills navbar-right">
+            <li class="active"><a href="javascript:void(0);">Web</a></li>
+            <li><a href="javascript:void(0);">Sms</a></li>
+            <li><a href="javascript:void(0);">IVR</a></li>
+        </ul>
+        <br/>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Survey designs</h3>
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-md-9">
+            <ul class="nav nav-pills">
+                <li class="well well-sm"><a href="javascript:void(0);"><i class="fa fa-list fa-2x"></i></a></li>
+                <li class="active well well-sm"><a href="javascript:void(0);"><i class="fa fa-th-large fa-2x"></i></a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 text-right">
+                <button data-toggle="modal" data-target="#modal-design-add" type="button" class="btn btn-success btn-lg btn-block"><span
+                        class="glyphicon glyphicon-plus-sign"></span> Add design
+                </button>
+            </div>
+        </div>
+
+        <br/><br/>
+
+        <div class="row">
+            <div class="col-xs-6 col-md-3">
+                <div class="thumbnail">
+                    <div class="caption">
+
+                        <div class="dropdown">
+                            <a role="button" data-toggle="dropdown" href="javascript: void(0)"><i class="fa fa-cog fa-2x"></i><b class="caret"></b></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-list-ul fa-1x"></i></a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-pencil-square-o fa-1x"></i></a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-copy fa-1x"></i></a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-trash-o fa-1x"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <h3>Design title</h3>
+
+                        <br/><br/><br/>
+                        <p class="text-center">
+                            <button data-toggle="modal" data-target="#modal-design-zoom" type="button" class="btn">
+                                <i rel="tooltip" title="Zoom" class="fa fa-search-plus fa-2x"></i>
+                            </button> &nbsp; <button type="button" class="btn design_edit_panel">
+                            <i rel="tooltip" title="Edit" class="fa fa-edit fa-2x"></i>
+                        </button>
+                        </p>
+                    </div>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKsAAAC0CAYAAADraNxXAAAFBUlEQVR4nO3Y7U4aXRiF4Z7/oWxQRuFFxLGi+IHGVKBWTasCFSwOM3MKqz9m+hFjg6bp2672/nElZtw7Y/Bm8zCv8jwX4ODV7/4DgOciVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtj4h2JN9bG/q81GTSEEhRC0djRWWv4+HR8pKq8/1jr/pGzJ/p+9f56nml31tP1fTZXy95VaQ3HvUrO0WJMlYw33W4qqQSFUFbW66o8flP321/b/8Q/FmuhDp671jbZa0ROxTofa22qr3S616mU0K+p8SJbu/9n75/MrxdXiev31oXqHr1UPQSFUFF/OlWf3Ot+uFqGvb+n1Vr34uRrr7Sz7A15fYv0FFrreXV0SW6b55baqISis9TROl+3PdH8eF+sbxxovcqV3b9QKQaHS0tlduvz+ybW6taAQIu2dj/Rx9E7dKCiEmvauE6V3p2qEoBA21J9lyrN7DVtl3CeTF7xpfBHrU2vSqc6a5QjQnz5a84P92Sdd7KwohKDG8YVOWxWFUFV78Mz9ea7FpK949fsRZFXx2USLPNf8cqu4Fh1olObK81Sjw6i4tvlO8+x3v66/HrE+sWZxe1jMrys7upo//oj98f5sfqVO7Vts1fjt13lz6f50otON4mO/uf9Gw7N9NStBITR1OlnoftgqR4BjTcpYJyflKNDsa0asf6MlsWZzXZaz4drRSIsX7U81OS4DCjV1r5Nn3//rF7xaVzeLct1esS46HOmek5VYH8eaTs/U/DIbTtMX7U+nfW1Wv/sYb5xovHje/nR0UJ7mu7pOcuV5ovedYqyI9m/18N3MOmBm/duluhsearfTUbv8Nh7WY3U6e+pdzMp/9kK35Wm1snP16LRasj+901k5p24NbnRezq/13q2S5+x/+KDdcl6N4gP1DuLyUdqqdt8/FE8D4uLEr9RjdeJG8bSiuqXh7Kk31d/nH4r124n22JcTLptfarsaFMKajkaLF+y/0ei0Wcyp7YGmaa7s04V2VoJCWNfRTfKM+2dKxgPtb64XTxVCUHVtU93BWEn5psmSsQbdlqJKMdtGG3vqj3jOCvxxiBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2PgPc53zu9+xgsAAAAABJRU5ErkJggg==" style="height: 180px; width: 100%; display: block;" data-src="holder.js/100%x180" alt="100%x180">
+                </div>
+            </div>
+        <div class="col-md-1"></div>
+            <div class="col-xs-6 col-md-3">
+                <div class="thumbnail">
+                    <div class="caption">
+
+                        <div class="dropdown">
+                            <a role="button" data-toggle="dropdown" href="javascript: void(0)"><i class="fa fa-cog fa-2x"></i><b class="caret"></b></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-list-ul fa-1x"></i></a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-pencil-square-o fa-1x"></i></a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-copy fa-1x"></i></a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-trash-o fa-1x"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <h3>Design title</h3>
+
+                        <br/><br/><br/>
+                        <p class="text-center">
+                            <button data-toggle="modal" data-target="#modal-design-zoom" type="button" class="btn">
+                                <i rel="tooltip" title="Zoom" class="fa fa-search-plus fa-2x"></i>
+                            </button> &nbsp; <button type="button" class="btn design_edit_panel">
+                            <i rel="tooltip" title="Edit" class="fa fa-edit fa-2x"></i>
+                        </button>
+                        </p>
+                    </div>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKsAAAC0CAYAAADraNxXAAAFBUlEQVR4nO3Y7U4aXRiF4Z7/oWxQRuFFxLGi+IHGVKBWTasCFSwOM3MKqz9m+hFjg6bp2672/nElZtw7Y/Bm8zCv8jwX4ODV7/4DgOciVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtj4h2JN9bG/q81GTSEEhRC0djRWWv4+HR8pKq8/1jr/pGzJ/p+9f56nml31tP1fTZXy95VaQ3HvUrO0WJMlYw33W4qqQSFUFbW66o8flP321/b/8Q/FmuhDp671jbZa0ROxTofa22qr3S616mU0K+p8SJbu/9n75/MrxdXiev31oXqHr1UPQSFUFF/OlWf3Ot+uFqGvb+n1Vr34uRrr7Sz7A15fYv0FFrreXV0SW6b55baqISis9TROl+3PdH8eF+sbxxovcqV3b9QKQaHS0tlduvz+ybW6taAQIu2dj/Rx9E7dKCiEmvauE6V3p2qEoBA21J9lyrN7DVtl3CeTF7xpfBHrU2vSqc6a5QjQnz5a84P92Sdd7KwohKDG8YVOWxWFUFV78Mz9ea7FpK949fsRZFXx2USLPNf8cqu4Fh1olObK81Sjw6i4tvlO8+x3v66/HrE+sWZxe1jMrys7upo//oj98f5sfqVO7Vts1fjt13lz6f50otON4mO/uf9Gw7N9NStBITR1OlnoftgqR4BjTcpYJyflKNDsa0asf6MlsWZzXZaz4drRSIsX7U81OS4DCjV1r5Nn3//rF7xaVzeLct1esS46HOmek5VYH8eaTs/U/DIbTtMX7U+nfW1Wv/sYb5xovHje/nR0UJ7mu7pOcuV5ovedYqyI9m/18N3MOmBm/duluhsearfTUbv8Nh7WY3U6e+pdzMp/9kK35Wm1snP16LRasj+901k5p24NbnRezq/13q2S5+x/+KDdcl6N4gP1DuLyUdqqdt8/FE8D4uLEr9RjdeJG8bSiuqXh7Kk31d/nH4r124n22JcTLptfarsaFMKajkaLF+y/0ei0Wcyp7YGmaa7s04V2VoJCWNfRTfKM+2dKxgPtb64XTxVCUHVtU93BWEn5psmSsQbdlqJKMdtGG3vqj3jOCvxxiBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2PgPc53zu9+xgsAAAAABJRU5ErkJggg==" style="height: 180px; width: 100%; display: block;" data-src="holder.js/100%x180" alt="100%x180">
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        <div class="col-xs-6 col-md-3">
+            <div class="thumbnail">
+                <div class="caption">
+
+                    <div class="dropdown">
+                        <a role="button" data-toggle="dropdown" href="javascript: void(0)"><i class="fa fa-cog fa-2x"></i><b class="caret"></b></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-list-ul fa-1x"></i></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-pencil-square-o fa-1x"></i></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-copy fa-1x"></i></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-trash-o fa-1x"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <h3>Design title</h3>
+
+                    <br/><br/><br/>
+                    <p class="text-center">
+                        <button data-toggle="modal" data-target="#modal-design-zoom" type="button" class="btn">
+                        <i rel="tooltip" title="Zoom" class="fa fa-search-plus fa-2x"></i>
+                        </button> &nbsp; <button type="button" class="btn design_edit_panel">
+                        <i rel="tooltip" title="Edit" class="fa fa-edit fa-2x"></i>
+                        </button>
+                    </p>
+                </div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKsAAAC0CAYAAADraNxXAAAFBUlEQVR4nO3Y7U4aXRiF4Z7/oWxQRuFFxLGi+IHGVKBWTasCFSwOM3MKqz9m+hFjg6bp2672/nElZtw7Y/Bm8zCv8jwX4ODV7/4DgOciVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtj4h2JN9bG/q81GTSEEhRC0djRWWv4+HR8pKq8/1jr/pGzJ/p+9f56nml31tP1fTZXy95VaQ3HvUrO0WJMlYw33W4qqQSFUFbW66o8flP321/b/8Q/FmuhDp671jbZa0ROxTofa22qr3S616mU0K+p8SJbu/9n75/MrxdXiev31oXqHr1UPQSFUFF/OlWf3Ot+uFqGvb+n1Vr34uRrr7Sz7A15fYv0FFrreXV0SW6b55baqISis9TROl+3PdH8eF+sbxxovcqV3b9QKQaHS0tlduvz+ybW6taAQIu2dj/Rx9E7dKCiEmvauE6V3p2qEoBA21J9lyrN7DVtl3CeTF7xpfBHrU2vSqc6a5QjQnz5a84P92Sdd7KwohKDG8YVOWxWFUFV78Mz9ea7FpK949fsRZFXx2USLPNf8cqu4Fh1olObK81Sjw6i4tvlO8+x3v66/HrE+sWZxe1jMrys7upo//oj98f5sfqVO7Vts1fjt13lz6f50otON4mO/uf9Gw7N9NStBITR1OlnoftgqR4BjTcpYJyflKNDsa0asf6MlsWZzXZaz4drRSIsX7U81OS4DCjV1r5Nn3//rF7xaVzeLct1esS46HOmek5VYH8eaTs/U/DIbTtMX7U+nfW1Wv/sYb5xovHje/nR0UJ7mu7pOcuV5ovedYqyI9m/18N3MOmBm/duluhsearfTUbv8Nh7WY3U6e+pdzMp/9kK35Wm1snP16LRasj+901k5p24NbnRezq/13q2S5+x/+KDdcl6N4gP1DuLyUdqqdt8/FE8D4uLEr9RjdeJG8bSiuqXh7Kk31d/nH4r124n22JcTLptfarsaFMKajkaLF+y/0ei0Wcyp7YGmaa7s04V2VoJCWNfRTfKM+2dKxgPtb64XTxVCUHVtU93BWEn5psmSsQbdlqJKMdtGG3vqj3jOCvxxiBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2PgPc53zu9+xgsAAAAABJRU5ErkJggg==" style="height: 180px; width: 100%; display: block;" data-src="holder.js/100%x180" alt="100%x180">
+            </div>
+        </div>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-md-3">
+                <div class="thumbnail">
+                    <div class="caption">
+
+                        <div class="dropdown">
+                            <a role="button" data-toggle="dropdown" href="javascript: void(0)"><i class="fa fa-cog fa-2x"></i><b class="caret"></b></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-list-ul fa-1x"></i></a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-pencil-square-o fa-1x"></i></a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-copy fa-1x"></i></a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-trash-o fa-1x"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <h3>Design title</h3>
+
+                        <br/><br/><br/>
+                        <p class="text-center">
+                            <button data-toggle="modal" data-target="#modal-design-zoom" type="button" class="btn">
+                                <i rel="tooltip" title="Zoom" class="fa fa-search-plus fa-2x"></i>
+                            </button> &nbsp; <button type="button" class="btn design_edit_panel">
+                            <i rel="tooltip" title="Edit" class="fa fa-edit fa-2x"></i>
+                        </button>
+                        </p>
+                    </div>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKsAAAC0CAYAAADraNxXAAAFBUlEQVR4nO3Y7U4aXRiF4Z7/oWxQRuFFxLGi+IHGVKBWTasCFSwOM3MKqz9m+hFjg6bp2672/nElZtw7Y/Bm8zCv8jwX4ODV7/4DgOciVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtj4h2JN9bG/q81GTSEEhRC0djRWWv4+HR8pKq8/1jr/pGzJ/p+9f56nml31tP1fTZXy95VaQ3HvUrO0WJMlYw33W4qqQSFUFbW66o8flP321/b/8Q/FmuhDp671jbZa0ROxTofa22qr3S616mU0K+p8SJbu/9n75/MrxdXiev31oXqHr1UPQSFUFF/OlWf3Ot+uFqGvb+n1Vr34uRrr7Sz7A15fYv0FFrreXV0SW6b55baqISis9TROl+3PdH8eF+sbxxovcqV3b9QKQaHS0tlduvz+ybW6taAQIu2dj/Rx9E7dKCiEmvauE6V3p2qEoBA21J9lyrN7DVtl3CeTF7xpfBHrU2vSqc6a5QjQnz5a84P92Sdd7KwohKDG8YVOWxWFUFV78Mz9ea7FpK949fsRZFXx2USLPNf8cqu4Fh1olObK81Sjw6i4tvlO8+x3v66/HrE+sWZxe1jMrys7upo//oj98f5sfqVO7Vts1fjt13lz6f50otON4mO/uf9Gw7N9NStBITR1OlnoftgqR4BjTcpYJyflKNDsa0asf6MlsWZzXZaz4drRSIsX7U81OS4DCjV1r5Nn3//rF7xaVzeLct1esS46HOmek5VYH8eaTs/U/DIbTtMX7U+nfW1Wv/sYb5xovHje/nR0UJ7mu7pOcuV5ovedYqyI9m/18N3MOmBm/duluhsearfTUbv8Nh7WY3U6e+pdzMp/9kK35Wm1snP16LRasj+901k5p24NbnRezq/13q2S5+x/+KDdcl6N4gP1DuLyUdqqdt8/FE8D4uLEr9RjdeJG8bSiuqXh7Kk31d/nH4r124n22JcTLptfarsaFMKajkaLF+y/0ei0Wcyp7YGmaa7s04V2VoJCWNfRTfKM+2dKxgPtb64XTxVCUHVtU93BWEn5psmSsQbdlqJKMdtGG3vqj3jOCvxxiBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2PgPc53zu9+xgsAAAAABJRU5ErkJggg==" style="height: 180px; width: 100%; display: block;" data-src="holder.js/100%x180" alt="100%x180">
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-xs-6 col-md-3">
+                <div class="thumbnail">
+                    <div class="caption">
+
+                        <div class="dropdown">
+                            <a role="button" data-toggle="dropdown" href="javascript: void(0)"><i class="fa fa-cog fa-2x"></i><b class="caret"></b></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-list-ul fa-1x"></i></a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-pencil-square-o fa-1x"></i></a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-copy fa-1x"></i></a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-trash-o fa-1x"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <h3>Design title</h3>
+
+                        <br/><br/><br/>
+                        <p class="text-center">
+                            <button data-toggle="modal" data-target="#modal-design-zoom" type="button" class="btn">
+                                <i rel="tooltip" title="Zoom" class="fa fa-search-plus fa-2x"></i>
+                            </button> &nbsp; <button type="button" class="btn design_edit_panel">
+                            <i rel="tooltip" title="Edit" class="fa fa-edit fa-2x"></i>
+                        </button>
+                        </p>
+                    </div>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKsAAAC0CAYAAADraNxXAAAFBUlEQVR4nO3Y7U4aXRiF4Z7/oWxQRuFFxLGi+IHGVKBWTasCFSwOM3MKqz9m+hFjg6bp2672/nElZtw7Y/Bm8zCv8jwX4ODV7/4DgOciVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtj4h2JN9bG/q81GTSEEhRC0djRWWv4+HR8pKq8/1jr/pGzJ/p+9f56nml31tP1fTZXy95VaQ3HvUrO0WJMlYw33W4qqQSFUFbW66o8flP321/b/8Q/FmuhDp671jbZa0ROxTofa22qr3S616mU0K+p8SJbu/9n75/MrxdXiev31oXqHr1UPQSFUFF/OlWf3Ot+uFqGvb+n1Vr34uRrr7Sz7A15fYv0FFrreXV0SW6b55baqISis9TROl+3PdH8eF+sbxxovcqV3b9QKQaHS0tlduvz+ybW6taAQIu2dj/Rx9E7dKCiEmvauE6V3p2qEoBA21J9lyrN7DVtl3CeTF7xpfBHrU2vSqc6a5QjQnz5a84P92Sdd7KwohKDG8YVOWxWFUFV78Mz9ea7FpK949fsRZFXx2USLPNf8cqu4Fh1olObK81Sjw6i4tvlO8+x3v66/HrE+sWZxe1jMrys7upo//oj98f5sfqVO7Vts1fjt13lz6f50otON4mO/uf9Gw7N9NStBITR1OlnoftgqR4BjTcpYJyflKNDsa0asf6MlsWZzXZaz4drRSIsX7U81OS4DCjV1r5Nn3//rF7xaVzeLct1esS46HOmek5VYH8eaTs/U/DIbTtMX7U+nfW1Wv/sYb5xovHje/nR0UJ7mu7pOcuV5ovedYqyI9m/18N3MOmBm/duluhsearfTUbv8Nh7WY3U6e+pdzMp/9kK35Wm1snP16LRasj+901k5p24NbnRezq/13q2S5+x/+KDdcl6N4gP1DuLyUdqqdt8/FE8D4uLEr9RjdeJG8bSiuqXh7Kk31d/nH4r124n22JcTLptfarsaFMKajkaLF+y/0ei0Wcyp7YGmaa7s04V2VoJCWNfRTfKM+2dKxgPtb64XTxVCUHVtU93BWEn5psmSsQbdlqJKMdtGG3vqj3jOCvxxiBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2PgPc53zu9+xgsAAAAABJRU5ErkJggg==" style="height: 180px; width: 100%; display: block;" data-src="holder.js/100%x180" alt="100%x180">
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-xs-6 col-md-3">
+                <div class="thumbnail">
+                    <div class="caption">
+
+                        <div class="dropdown">
+                            <a role="button" data-toggle="dropdown" href="javascript: void(0)"><i class="fa fa-cog fa-2x"></i><b class="caret"></b></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-list-ul fa-1x"></i></a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-pencil-square-o fa-1x"></i></a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-copy fa-1x"></i></a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-trash-o fa-1x"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <h3>Design title</h3>
+
+                        <br/><br/><br/>
+                        <p class="text-center">
+                            <button data-toggle="modal" data-target="#modal-design-zoom" type="button" class="btn">
+                                <i rel="tooltip" title="Zoom" class="fa fa-search-plus fa-2x"></i>
+                            </button> &nbsp; <button type="button" class="btn design_edit_panel">
+                            <i rel="tooltip" title="Edit" class="fa fa-edit fa-2x"></i>
+                        </button>
+                        </p>
+                    </div>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKsAAAC0CAYAAADraNxXAAAFBUlEQVR4nO3Y7U4aXRiF4Z7/oWxQRuFFxLGi+IHGVKBWTasCFSwOM3MKqz9m+hFjg6bp2672/nElZtw7Y/Bm8zCv8jwX4ODV7/4DgOciVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtggVtj4h2JN9bG/q81GTSEEhRC0djRWWv4+HR8pKq8/1jr/pGzJ/p+9f56nml31tP1fTZXy95VaQ3HvUrO0WJMlYw33W4qqQSFUFbW66o8flP321/b/8Q/FmuhDp671jbZa0ROxTofa22qr3S616mU0K+p8SJbu/9n75/MrxdXiev31oXqHr1UPQSFUFF/OlWf3Ot+uFqGvb+n1Vr34uRrr7Sz7A15fYv0FFrreXV0SW6b55baqISis9TROl+3PdH8eF+sbxxovcqV3b9QKQaHS0tlduvz+ybW6taAQIu2dj/Rx9E7dKCiEmvauE6V3p2qEoBA21J9lyrN7DVtl3CeTF7xpfBHrU2vSqc6a5QjQnz5a84P92Sdd7KwohKDG8YVOWxWFUFV78Mz9ea7FpK949fsRZFXx2USLPNf8cqu4Fh1olObK81Sjw6i4tvlO8+x3v66/HrE+sWZxe1jMrys7upo//oj98f5sfqVO7Vts1fjt13lz6f50otON4mO/uf9Gw7N9NStBITR1OlnoftgqR4BjTcpYJyflKNDsa0asf6MlsWZzXZaz4drRSIsX7U81OS4DCjV1r5Nn3//rF7xaVzeLct1esS46HOmek5VYH8eaTs/U/DIbTtMX7U+nfW1Wv/sYb5xovHje/nR0UJ7mu7pOcuV5ovedYqyI9m/18N3MOmBm/duluhsearfTUbv8Nh7WY3U6e+pdzMp/9kK35Wm1snP16LRasj+901k5p24NbnRezq/13q2S5+x/+KDdcl6N4gP1DuLyUdqqdt8/FE8D4uLEr9RjdeJG8bSiuqXh7Kk31d/nH4r124n22JcTLptfarsaFMKajkaLF+y/0ei0Wcyp7YGmaa7s04V2VoJCWNfRTfKM+2dKxgPtb64XTxVCUHVtU93BWEn5psmSsQbdlqJKMdtGG3vqj3jOCvxxiBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2iBU2PgPc53zu9+xgsAAAAABJRU5ErkJggg==" style="height: 180px; width: 100%; display: block;" data-src="holder.js/100%x180" alt="100%x180">
+                </div>
+            </div>
+
+        </div>
+        <br/><br/>
+        <div class="clearfix"></div>
+
+
+        <div class="panel panel-default design-block" style="display: none;">
+            <div class="panel-heading">
+                <div class="row">
+                <div class="col-sm-10">
+                    <h2>Edit design: Design title </h2>
+                </div>
+                <div class="col-sm-2">
+                    <button type="button" class="close design_edit_panel_close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                </div>
+            </div>
+            <div class="panel-body">
+
+                <form class="form-horizontal" role="form" name="language_form">
+                    <div class="form-group">
+                        <label class="col-sm-1">Title</label>
+                        <div class="col-sm-10">
+                            <input name="language_title" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <br/>
+
+                    <div class="form-group ">
+                        <div class="col-sm-10">
+                            <div class="btn-group">
+                                <a class="btn btn-default" href="javascript:void(0)"><i class="fa fa-bold"></i></a>
+                                <a class="btn btn-default" href="javascript:void(0)"><i class="fa fa-italic"></i></a>
+                                <a class="btn btn-default" href="javascript:void(0)"><i class="fa fa-underline"></i></a>
+                                <a class="btn btn-default" href="javascript:void(0)"><i class="fa fa-chain"></i></a>
+
+                                <a class="btn btn-default" href="javascript:void(0)"><i class="fa fa-align-left"></i></a>
+                                <a class="btn btn-default" href="javascript:void(0)"><i class="fa fa-align-center"></i></a>
+                                <a class="btn btn-default" href="javascript:void(0)"><i class="fa fa-align-right"></i></a>
+                                <a class="btn btn-default" href="javascript:void(0)"><i class="fa fa-align-justify"></i></a>
+                                <a class="btn btn-default" href="javascript:void(0)"><i class="fa fa-picture-o"></i></a>
+                                <a class="btn btn-default" href="javascript:void(0)"><i class="fa fa-pencil-square-o"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-1">
+                        <p class="text-right">
+                            <button data-toggle="modal" data-target="#modal-question-answer-add" type="button" class="btn btn-success design_edit_html_contol">
+                                <i class="fa fa-edit fa-lg"></i> Edit HTML
+                            </button>
+                        </p>
+                        </div>
+                        <br/>
+                        <div class="clearfix"></div>
+                        <div class="col-sm-12">
+                            <textarea class="form-control" rows="5"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group design_edit_html" style="display: none;">
+                        <div class="col-sm-12">
+                        <p class="text-right">
+                            <button data-toggle="modal" data-target="#modal-question-answer-add" type="button" class="btn btn-success design_edit_html_contol">
+                                <i class="fa fa-mail-reply fa-lg"></i> Back to Editor
+                            </button>
+                        </p>
+                            <textarea class="form-control" rows="5">HTML</textarea>
+                        </div>
+                    </div>
+
+
+                </form>
+                <p>
+                <div class="col-sm-1">
+                    <p class="text-right">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
+                    </p>
+                </div>
+                <div class="col-sm-11">
+                    <p class="text-right">
+                        <button type="button" class="btn btn-default design_edit_panel_close">Cancel</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                    </p>
+                </div>
+                </p>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="modal-design-zoom">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Design title </h4>
+            </div>
+            <div class="modal-body">
+
+                <img class="center-block" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAEsCAYAAADtt+XCAAAJ4klEQVR4nO3dW1sTVx/G4X7/j6JsK1pQrFhRUbEioGUrWDYCmeQr/N8DFGEAIY95W6z3wX1EspKsy2v9MrMm4y+9Xq8AoF+//NtvAIAfk4AAEBEQACICAkBEQACICAgAEQEBICIgAEQEBICIgAAQERAAIgICQERAAIgICAARAQEgIiAARAQEgIiAABAREAAiAgJAREAAiAgIABEBASAiIABEBASAiIAAEBEQACICAkBEQACICAgAEQEBICIgAEQEBICIgAAQERAAIgICQERAAIgICAARAQEgIiAARAQEgIiAABAREAAiAgJAREAAiAgIABEBASAiIABEBASAiIAAEBEQACICAkBEQACICAgAEQEBICIgAEQEBICIgAAQERAAIgICQERAAIgICAARAQEgIiAARAQEgIiAABAREAAiAgJAREAAiAgIABEBASAiIABEBASAiIAAEBEQACICAkBEQACICAgAEQEBICIgAEQEBICIgAAQERAAIgICQERAAIgICAARAQEgIiAARAQEgIiAABAREAAiAgJAREAAiAgIABEBASAiIABEBASAiIAAEBEQACICAkBEQACICAgAEQEBICIgAEQEBICIgAAQERAAIgICQERAAIgICAARAQEgIiAARAQEgIiAABAREAAiAgJAREAAiAgIABEBASAiIABEBASAiIAAEBEQACICAkBEQACICAgAEQEBICIgAEQEBICIgAAQERAAIgICQERAAIgICAARAQEgIiAARAQEgIiAMFDdg7WaHbtVt26dNfRwrY6+9dxmvzYX52rm/kSNDX153lCN3pmsR88Xan23ufr1BzFGpFtHO+u1/OZFzc48qHsT4zU2PPT1898errGJyZp+8rIW13er8098jn9tLviZCAiD0z2olcej5+JxVUCa3Xf1ZOL8c84ar5m3Hy9dfAcxRq6prWdjV7z2V6PTb2r76L86F/xMBIQB6dan949q+JIF67KAdA9W6o8LjlguNlwPl/eq+T+M8X36C8itW7dq7OmHc4v3f2Mu+JkICAPR7C3X9NDli9WFAeke1tof7SOW4Zp6/rZWNjZqdflFTY+2xhp6WO8+dQc7xndrauv5RI3dna4/5l7X2+X3tbK2UZsb67WyNF9Pfhs6Pydjs/Wh81+cC34mAsL3a3br7f2vi+TIo/l61jqFclFAuvuLNdn+Zj67ceZxne25+rX1mIn5nZNvzd87Rnd/uR4Ot5+/Xofd0++1qY/z91oL872a3+58/SzdbyzCna16Pt5euH+v9aObNRf/+r8jfjgCwndqaufNZN0++Wb9pNY+7dTrKwPSrU/Lk61FeayebbU2d5u/69Wd1uI78WftNoMb42DlcY22xphdP6zu5+c32/N198zfb9fUwu71F91mp+bbexITr2unuWlzAf0REL5L83G+7p0sRuP1bOOwus3uNQLSqY3HI60Fb6reH7Rf46jWHrZOAd2erpXDQY3Rq173sNZnW3sYY09q7aBbvc52vWp/lunl2rt0we1W0zTVNE11jg5qd3u1Fmbvfg3s54X98crBSaBu1FxAHwSEXGe7Xp5aXCfmto4jcZ2AdD/V8mTrm/DwTG102q/T1NbT9gb1RL3ebQYzxpfHHH2oudZ7HnvyV629mDj7vNGZWjm4/HRVs/28xlqniE4buTdT82v7Z49ebtpcwDUJCKGj2py783URujtf218Wq+sEpNmtN3dbC95oa2O516ter6ntuV9bC954zW03gxnj1OOa7dNHUxc5e2rrIt8OyEjde/Si3n08OjvGDZwLuA4BIdCtw42nNX5yCmSy/tw5tQD9oAHp9ZraWZhqnW46fYT14ds/huxdfQRy7E7Nrp46hXUj5wKuJiD0r/n71KbwUN1/29pQ/hFPYZ28971afHDBZbcTr2q7r43mbjWdg9rbXqvF51M10h5v5HGtHd7wuYArCAj9a7br2bV/rHb+NM6TzU4db/oOt/42Ve8u2PRd/ebG8feOcdZlt2K5NXS/FuJFtnPBt/7hmtk4Ovn7TZwLuIqA0L+BBOTiy06fnrvs9GO97PPS1f7GOKX7qf6aaV/JdMpvr+tjeLnr0er0uVNjk8ufPp/GuoFzAdcgIPRvIAHpVXfvGj9827rix3MDGONYU3tL0zXUeq+jt1vPe7F17hYkzf5mfdjtXL653j2olXNhul3TK4cnj7lZcwHXIyD0r3tQW++XanFx8WIL8/V7+5YZE89qYXGxFhff1eaXy2AvufXG/bmlWt3YrLXllxfcemP6Wrfv6GuMXq+anTc1eSYWt2tqYaf2/ppp7V+M19ONs1difTm6GJt8VE/nF2p5Zb02PmzV1uZ6rSy9rtn7F90na6qW9gf8OQY0F3BdAsLgXeuHhMduxA0EO9v1qnUF09CDxePTOt2DWm0vymN/nPktyNHqdN9HYhcdydyIuYA+CAiD10dAer1eNbvL9aR9Xv6csXr0zVuYp2Mc1ebzO2cfNzRdS3tf9w66h+vnNtaHf39X+5/vl9VfQEZr+tVGHXRv4lxAfwSEweszIMfP2a+NxbmamZqo0ZO7+t6ukc//AdLabucar9vvGN06WJtt/W5juB4u75/bzzjceNbaOxiqB4vHly93O3u1tbJU889n6sFvEzU+NnJmL2Vo9Ne692Cmnr1+Vx8+Xe8/g/rn5wL6JyAARAQEgIiAABAREAAiAgJAREAAiAgIABEBASAiIABEBASAiIAAEBEQACICAkBEQACICAgAEQEBICIgAEQEBICIgAAQERAAIgICQERAAIgICAARAQEgIiAARAQEgIiAABAREAAiAgJAREAAiAgIABEBASAiIABEBASAiIAAEBEQACICAkBEQACICAgAEQEBICIgAEQEBICIgAAQERAAIgICQERAAIgICAARAQEgIiAARAQEgIiAABAREAAiAgJAREAAiAgIABEBASAiIABEBASAiIAAEBEQACICAkBEQACICAgAEQEBICIgAEQEBICIgAAQERAAIgICQERAAIgICAARAQEgIiAARAQEgIiAABAREAAiAgJAREAAiAgIABEBASAiIABEBASAiIAAEBEQACICAkBEQACICAgAEQEBICIgAEQEBICIgAAQERAAIgICQERAAIgICAARAQEgIiAARAQEgIiAABAREAAiAgJAREAAiAgIABEBASAiIABEBASAiIAAEBEQACICAkBEQACICAgAEQEBICIgAEQEBICIgAAQERAAIgICQERAAIgICAARAQEgIiAARAQEgIiAABAREAAiAgJAREAAiAgIABEBASAiIABEBASAiIAAEBEQACICAkBEQACICAgAEQEBICIgAEQEBICIgAAQERAAIgICQERAAIgICAARAQEg8j8uYExh/PpACgAAAABJRU5ErkJggg==" alt="400x300" data-src="holder.js/400x300/auto">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="modal-design-add">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Add Design</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Title</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script src="lib/jquery/scrollup.js"></script>

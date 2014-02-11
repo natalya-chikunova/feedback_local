@@ -1,0 +1,103 @@
+[
+    {
+        "id": "1",
+        "name":"Text field",
+        "value":"Submit val",
+        "default":"Submit",
+        "type":"text",
+        "override":1
+    },
+    {
+        "id": "8",
+        "name": "Multi Values",
+        "value":[{
+            "multi_default": "multi default value",
+            "multi_name": "Multi title"
+        }],
+        "default":"0",
+        "type":"multi_values",
+        "override":0
+    },
+    {
+        "id": "2",
+        "name": "Textarea",
+        "value":"No val",
+        "default":"No",
+        "type":"textarea",
+        "override":1
+    },
+    {
+        "id": "3",
+        "name": "Wysiwyg",
+        "value":"Yes",
+        "default":"Yes",
+        "type":"wysiwyg",
+        "override":0
+    },
+    {
+        "id": "4",
+        "name": "Radio",
+        "value":[
+            {
+                "radio_id": "yes",
+                "radio_name": "Yes"
+            },
+            {
+                "radio_id": "no",
+                "radio_name": "No"
+            }
+        ],
+        "selected": "no",
+        "default":"yes",
+        "type":"radio",
+        "override":0
+    },
+    {
+        "id": "5",
+        "name": "Select",
+        "value":[{
+                "option_id": "demo",
+                "option_name": "Demo"
+            },
+            {
+                "option_id": "sunrise",
+                "option_name": "Sunrise"
+            },
+            {
+                "option_id": "sky",
+                "option_name": "Sky"
+            }
+        ],
+        "selected": "sunrise",
+        "default":"sunrise",
+        "type":"select",
+        "override":0
+    },
+    {
+        "id": "6",
+        "name": "Checkbox",
+        "value": 1,
+        "default": 0,
+        "type":"checkbox",
+        "override":0
+    },
+    {
+        "id": "7",
+        "name": "Text field 2",
+        "value":"Test 2",
+        "default":"Test 2",
+        "type":"text",
+        "override":0
+    },
+    {
+        "id": "9",
+        "name": "Multi Values 2",
+        "value":[{
+            "multi_default": "multi default value",
+            "multi_name": "Multi title"
+        }],
+        "default":"0",
+        "type":"multi_values",
+        "override":0
+    }
+]

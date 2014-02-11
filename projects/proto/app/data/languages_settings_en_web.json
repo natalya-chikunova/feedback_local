@@ -1,0 +1,42 @@
+[
+    {
+        "id": "1",
+        "name":"WEB: Languages Settings 1",
+        "value":"Submit",
+        "default":"Submit",
+        "type":"text",
+        "override":1
+    },
+    {
+        "id": "2",
+        "name": "WEB: Languages Settings 2",
+        "value":"No",
+        "default":"No",
+        "type":"text",
+        "override":0
+    },
+    {
+        "id": "3",
+        "name": "Languages Settings 3",
+        "value": 1,
+        "default": 0,
+        "type":"text",
+        "override":0
+    },
+    {
+        "id": "4",
+        "name": "Languages Settings 4",
+        "value":"Yes",
+        "default":"yes",
+        "type":"text",
+        "override":0
+    },
+    {
+        "id": "5",
+        "name": "Languages Settings 5",
+        "value":"demo",
+        "default":"demo",
+        "type":"text",
+        "override":0
+    }
+]

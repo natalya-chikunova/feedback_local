@@ -1,0 +1,63 @@
+[
+    {
+        "id": "1",
+        "name":"WEB: Languages Settings 1",
+        "value":"Submit",
+        "default":"Submit",
+        "type":"text",
+        "override":1
+    },
+    {
+        "id": "2",
+        "name": "WEB: Languages Settings 2",
+        "value":"No",
+        "default":"No",
+        "type":"textarea",
+        "override":0
+    },
+    {
+        "id": "3",
+        "name": "Languages Settings 3",
+        "value": 1,
+        "default": 0,
+        "type":"checkbox",
+        "override":0
+    },
+    {
+        "id": "4",
+        "name": "Languages Settings 4",
+        "value":[
+            {
+                "radio_id": "yes",
+                "radio_name": "Yes"
+            },
+            {
+                "radio_id": "no",
+                "radio_name": "No"
+            }
+        ],
+        "default":"yes",
+        "type":"radio",
+        "override":0
+    },
+    {
+        "id": "5",
+        "name": "Languages Settings 5",
+        "value":[{
+                "option_id": "demo",
+                "option_name": "Demo"
+            },
+            {
+                "option_id": "sunrise",
+                "option_name": "Sunrise"
+            },
+            {
+                "option_id": "sky",
+                "option_name": "Sky"
+            }
+        ],
+        "default":"sunrise",
+        "type":"select",
+        "override":0
+    }
+]

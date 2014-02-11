@@ -1,0 +1,335 @@
+<div class="row">
+<div class="col-md-2">
+    <div ng-include src="'partials/sidepanel.html'"></div>
+
+</div>
+<div class="col-md-10">
+
+<ol class="breadcrumb">
+    <li><a href="#/surveys_list">Surveys</a></li>
+    <li><a href="#/surveys_list/survey">Survey title test 2</a></li>
+    <li class="active">Question 1</li>
+</ol>
+
+<ul class="nav nav-pills navbar-right">
+    <li class="active"><a href="javascript:void(0);">Web</a></li>
+    <li><a href="javascript:void(0);">Sms</a></li>
+    <li><a href="javascript:void(0);">IVR</a></li>
+</ul>
+<br/>
+<h2>Question 1</h2>
+<p class="text-right">
+    <button type="button" class="btn show-sliding-panel"><span
+            class="glyphicon glyphicon-eye-open"></span> Sliding panel
+    </button>
+</p>
+
+<div class="relative-block">
+    <div id="sliding-panel">
+        <div class="question_title_preview"></div>
+        <div class="question_text_preview"></div>
+        <div class="question_required_preview"></div>
+        <div class="question_answers_preview"></div>
+    </div>
+</div>
+
+
+<form class="form-horizontal" role="form" name="question_form">
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Title</label>
+
+        <div class="col-sm-10">
+            <input name="question_title" type="text" class="form-control" placeholder="Enter title">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">External id</label>
+
+        <div class="col-sm-10">
+            <select name="external_id" class="form-control">>
+                <option value="id_1">id 1</option>
+                <option value="id_2">id 2</option>
+                <option value="id_3">id 3</option>
+                <option value="id_4">id 4</option>
+                <option value="id_5">id 5</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Type</label>
+
+        <div class="col-sm-10">
+            <select name="quesion_type" class="form-control">
+                <option value="1">Multiple</option>
+                <option value="2">Open</option>
+                <option value="3">Url redirect</option>
+                <option value="4">Rating score</option>
+                <option value="5">Text label</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Flow conditions</label>
+
+        <div class="col-sm-10">
+            <textarea name="flow_conditions" class="form-control disabled" rows="2"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label"></label>
+
+        <div class="col-sm-10">
+            <ul class="nav nav-pills">
+                <li class="active"><a href="javascript:void(0);">En</a></li>
+                <li><a href="javascript:void(0);">De</a></li>
+                <li><a href="javascript:void(0);">Es</a></li>
+                <li><a href="javascript:void(0);">It</a></li>
+            </ul>
+        </div>
+    </div>
+    <br/>
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Question text</h3>
+            <button style="margin-top: -20px;" type="button" class="close hide_answers_block"><i class="fa fa-chevron-circle-up fa-lg"></i></button>
+        </div>
+        <div class="panel-body">
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Text</label>
+
+        <div class="col-sm-10">
+            <textarea name="question_text" class="form-control" rows="3"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Error text</label>
+
+        <div class="col-sm-10">
+            <textarea name="error_text" class="form-control" rows="3"></textarea>
+        </div>
+    </div>
+        </div>
+    </div>
+    <br/>
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Configurable values</h3>
+            <button style="margin-top: -20px;" type="button" class="close hide_answers_block"><i class="fa fa-chevron-circle-up fa-lg"></i></button>
+        </div>
+        <div class="panel-body">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Show</label>
+                <div class="col-sm-5">
+                    <select name="question_show" class="form-control">
+                        <option value="1">Vertically</option>
+                        <option value="2">Horizontally</option>
+                        <option value="3">Dropdown</option>
+                    </select>
+                </div>
+            </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label"></label>
+
+        <div class="col-sm-10">
+            <label class="checkbox-inline control-label">
+            <input name="question_required" type="checkbox" value="option1"> Required
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label"></label>
+
+        <div class="col-sm-10">
+            <label class="checkbox-inline control-label">
+                <input name="question_multichoice" type="checkbox" value="option3"> Multichoice
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label"></label>
+
+        <div class="col-sm-10">
+            <label class="checkbox-inline control-label">
+                <input name="question_dont_know" type="checkbox" value="option2"> Don't know option
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Number of values</label>
+        <div class="col-sm-5">
+               <input name="question_number_values" type="text" class="form-control" placeholder="Number of values">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Min value</label>
+        <div class="col-sm-5">
+            <input name="question_min_value" type="text" class="form-control" placeholder="Min value">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Max value</label>
+        <div class="col-sm-5">
+            <input name="question_max_value" type="text" class="form-control" placeholder="Max value">
+        </div>
+    </div>
+        </div>
+    </div>
+
+
+
+    <br/>
+
+    <p class="text-right">
+        <button data-toggle="modal" data-target="#modal-question-answer-add" type="button" class="btn btn-success"><span
+                class="glyphicon glyphicon-plus-sign"></span> Add Value
+        </button>
+    </p>
+    <div class="form-group">
+        <div class="dd" id="nestable">
+            <ol class="dd-list">
+                <li class="dd-item" data-id="1">
+                    <div class="dd-handle">
+                        Answer 1
+                                <span class="badge">
+                                    <input class="router-pointer" type="text" value="5">
+                                    <a class="modal-answer-edit btn btn-info btn-xs" href="#" data-toggle="modal" data-target="#modal-question-answer-edit"> <i class="fa fa-edit fa-lg router-pointer"></i></a>
+                                    <a class="btn btn-danger btn-xs" href="javascript: void(0)"> <i class="fa fa-trash-o router-pointer"></i></a>
+                                </span>
+                    </div>
+                </li>
+                <li class="dd-item" data-id="2">
+                    <div class="dd-handle">
+                        Answer 2
+                                <span class="badge">
+                                    <input class="router-pointer" type="text" value="15">
+                                    <a class="modal-answer-edit btn btn-info btn-xs" href="#" data-toggle="modal" data-target="#modal-question-answer-edit"> <i class="fa fa-edit fa-lg router-pointer"></i></a>
+                                    <a class="btn btn-danger btn-xs" href="javascript: void(0)"> <i class="fa fa-trash-o router-pointer"></i></a>
+                                </span>
+                    </div>
+                </li>
+                <li class="dd-item" data-id="3">
+                    <div class="dd-handle">
+                        Answer 3
+                                <span class="badge">
+                                    <input class="router-pointer" type="text" value="25">
+                                    <a class="modal-answer-edit btn btn-info btn-xs" href="#" data-toggle="modal" data-target="#modal-question-answer-edit"> <i class="fa fa-edit fa-lg router-pointer"></i></a>
+                                    <a class="btn btn-danger btn-xs" href="javascript: void(0)"> <i class="fa fa-trash-o router-pointer"></i></a>
+                                </span>
+                    </div>
+                </li>
+                <li class="dd-item" data-id="4">
+                    <div class="dd-handle">
+                        Answer 4
+                                <span class="badge">
+                                    <input class="router-pointer" type="text" value="50">
+                                    <a class="modal-answer-edit btn btn-info btn-xs" href="#" data-toggle="modal" data-target="#modal-question-answer-edit"> <i class="fa fa-edit fa-lg router-pointer"></i></a>
+                                    <a class="btn btn-danger btn-xs" href="javascript: void(0)"> <i class="fa fa-trash-o router-pointer"></i></a>
+                                </span>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+</form>
+<p>
+<div class="col-sm-3">
+    <p class="text-right">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
+    </p>
+</div>
+<div class="col-sm-9">
+    <p class="text-right">
+        <button type="button" class="btn btn-default">Cancel</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+    </p>
+</div>
+</p>
+</div>
+</div>
+
+<div class="modal fade" id="modal-question-answer-add">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Add new answer</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Answer value</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" value="">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="modal-question-answer-edit">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Edit answer value</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Answer 3</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" value="">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="col-sm-2">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
+                    </div>
+                <div class="col-sm-10">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                    </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="modal-answer-preview">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Answer title 1</h4>
+            </div>
+            <div class="modal-body">
+                <ul class="nav nav-pills nav-justified">
+                    <li class="active"><a href="javascript:void(0);">Desktop</a></li>
+                    <li><a href="javascript:void(0);">Tablet</a></li>
+                    <li><a href="javascript:void(0);">Mobile</a></li>
+                </ul>
+                <br>
+                Will be soon &hellip;
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<script src="lib/jquery/jquery.nestable.js"></script>
+<script src="lib/jquery/jquery.nestable-demo.js"></script>
+<script src="lib/jquery/scrollup.js"></script>

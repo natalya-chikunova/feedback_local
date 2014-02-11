@@ -1,0 +1,115 @@
+<div class="row">
+    <div class="col-md-2">
+        <div ng-include src="'partials/settings_sidepanel.html'"></div>
+
+    </div>
+    <div class="col-md-10">
+        <ol class="breadcrumb">
+            <li><a href="#">Global Settings</a></li>
+            <li class="active">Case Alerts</li>
+        </ol>
+
+        <ul class="nav nav-pills navbar-right">
+            <li class="active"><a href="javascript:void(0);">Web</a></li>
+            <li><a href="javascript:void(0);">Sms</a></li>
+            <li><a href="javascript:void(0);">IVR</a></li>
+        </ul>
+        <br/>
+        <h3>Case Alerts</h3>
+
+
+                <form class="form-horizontal" role="form" name="language_form">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Case alert email</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" placeholder="test@nothing.com" value="">
+                        </div>
+                        <div class="col-sm-3">
+                            <button data-toggle="modal" data-target="#modal-case-alert-add" type="button" class="btn btn-success btn-lg btn-block"><span
+                                    class="glyphicon glyphicon-plus-sign"></span> Add Case Alert
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+
+                <table class="table table-striped table-hover">
+                    <thead>
+                    <tr class="info">
+                        <th style="width: 80%">Title</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Case alert 1</td>
+                        <td>
+                            <a href="#/global_settings/case_alert_conditions"><button class="btn btn-info"><i class="fa fa-edit fa-lg"></i></button></a>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger"><i class="fa fa-trash-o fa-lg"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Case alert 2</td>
+                        <td>
+                            <a href="#/global_settings/case_alert_conditions"><button class="btn btn-info"><i class="fa fa-edit fa-lg"></i></button></a>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger"><i class="fa fa-trash-o fa-lg"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Case alert 3</td>
+                        <td>
+                            <a href="#/global_settings/case_alert_conditions"><button class="btn btn-info"><i class="fa fa-edit fa-lg"></i></button></a>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger"><i class="fa fa-trash-o fa-lg"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Case alert 4</td>
+                        <td>
+                            <a href="#/global_settings/case_alert_conditions"><button class="btn btn-info"><i class="fa fa-edit fa-lg"></i></button></a>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger"><i class="fa fa-trash-o fa-lg"></i></button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+
+
+    </div>
+</div>
+
+<div class="modal fade" id="modal-case-alert-add">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Add Case Alert</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Title</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script src="lib/jquery/scrollup.js"></script>

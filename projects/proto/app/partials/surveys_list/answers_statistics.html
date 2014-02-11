@@ -1,0 +1,245 @@
+<div class="row">
+    <div class="col-md-2">
+        <div ng-include src="'partials/sidepanel.html'"></div>
+
+    </div>
+    <div class="col-md-10">
+
+    <ol class="breadcrumb">
+        <li><a href="#/surveys_list">Surveys</a></li>
+        <li><a href="#/surveys_list/survey">Survey title test 2</a></li>
+        <li class="active">Answers Statistics</li>
+    </ol>
+
+        <ul class="nav nav-pills navbar-right">
+            <li class="active"><a href="javascript:void(0);">Web</a></li>
+            <li><a href="javascript:void(0);">Sms</a></li>
+            <li><a href="javascript:void(0);">IVR</a></li>
+            <li><a href="javascript:void(0);">All Channels</a></li>
+        </ul>
+        <br/>
+
+        <h3>Survey title 1</h3>
+
+        <div class="row">
+            <ul class="nav nav-pills navbar-right">
+                <li class="well well-sm"><a href="javascript:void(0);"><i class="fa fa-tasks fa-2x"></i></a></li>
+                <li class="active well well-sm"><a href="javascript:void(0);"><i class="fa fa-bar-chart-o fa-2x"></i></a></li>
+                <li class="active well well-sm"><a href="javascript:void(0);"><i class="fa fa-th-large fa-2x"></i></a></li>
+            </ul>
+        </div>
+        <br/><br/>
+        <div class="row">
+            <div class="col-md-7">
+                <form class="form-inline" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-1 control-label">Start </label>
+                        <div class="col-sm-4">
+                            <input class="datepicker form-control" data-date-format="dd-mm-yyyy" type="text" placeholder="dd-mm-yyyy">
+                        </div>
+                        <label class="col-sm-1 control-label">End </label>
+                        <div class="col-sm-4">
+                            <input class="datepicker form-control" data-date-format="dd-mm-yyyy" type="text" placeholder="dd-mm-yyyy">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-5">
+                <div class="text-right">
+                    <button type="button" class="btn btn-default btn-sm">Today</button>
+                    <button type="button" class="btn btn-info btn-sm">Yesterday</button>
+                    <button type="button" class="btn btn-default btn-sm">Last week</button>
+                    <button type="button" class="btn btn-default btn-sm">Last month</button>
+                </div>
+            </div>
+        </div>
+
+        <br/><br/>
+        <div class="panel panel-default question-statistics">
+            <div class="panel-heading">Question title 1
+                <button type="button" class="close hide_answers_block"><i class="fa fa-chevron-circle-up fa-lg"></i></button>
+            </div>
+            <div class="panel-body">
+                <ul class="nav navbar-default nav-justified" style="padding: 0 20px;">
+                    <li class="active">
+                        <br/>
+                        <p> Answer 1</p>
+                    </li>
+                    <li>
+                        <br/>
+                        <div class="progress-bar-label pull-left"><button>4</button> &nbsp;</div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                                <span class="sr-only">40% Complete</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-default nav-justified" style="padding: 0 20px;">
+                    <li class="active">
+                        <br/>
+                        <p> Answer 2</p>
+                    </li>
+                    <li>
+                        <br/>
+                        <div class="progress-bar-label pull-left"><button>7</button> &nbsp;</div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;">
+                                <span class="sr-only">70% Complete</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav navbar-default nav-justified" style="padding: 0 20px;">
+                    <li class="active">
+                        <br/>
+                        <p> Answer 3</p>
+                    </li>
+                    <li>
+                        <br/>
+                        <div class="progress-bar-label pull-left"><button>2</button> &nbsp;</div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+                                <span class="sr-only">20% Complete</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+
+        <div class="panel panel-default question-statistics">
+            <div class="panel-heading">Question title 2
+                <button type="button" class="close hide_answers_block"><i class="fa fa-chevron-circle-up fa-lg"></i></button>
+            </div>
+            <div class="panel-body">
+        <ul class="nav navbar-default nav-justified" style="padding: 0 20px;">
+            <li class="active">
+                <br/>
+                <p> Answer 1</p>
+            </li>
+            <li>
+                <br/>
+                <div class="progress-bar-label pull-left"><button>4</button> &nbsp;</div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                        <span class="sr-only">40% Complete</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="nav navbar-default nav-justified" style="padding: 0 20px;">
+            <li class="active">
+                <br/>
+                <p> Answer 2</p>
+            </li>
+            <li>
+                <br/>
+                <div class="progress-bar-label pull-left"><button>4</button> &nbsp;</div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                        <span class="sr-only">40% Complete</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+        <div class="panel panel-default question-statistics">
+            <div class="panel-heading">Question title 3
+                <button type="button" class="close hide_answers_block"><i class="fa fa-chevron-circle-up fa-lg"></i></button>
+            </div>
+            <div class="panel-body">
+                <ul class="nav navbar-default nav-justified" style="padding: 0 20px;">
+                    <li class="active">
+                        <br/>
+                        <p> Answer 1</p>
+                    </li>
+                    <li>
+                        <br/>
+                        <div class="progress-bar-label pull-left"><button>2</button> &nbsp;</div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+                                <span class="sr-only">20% Complete</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav navbar-default nav-justified" style="padding: 0 20px;">
+                    <li class="active">
+                        <br/>
+                        <p> Answer 2</p>
+                    </li>
+                    <li>
+                        <br/>
+                        <div class="progress-bar-label pull-left"><button>2</button> &nbsp;</div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+                                <span class="sr-only">20% Complete</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="panel panel-default question-statistics">
+            <div class="panel-heading">Question title 4
+                <button type="button" class="close hide_answers_block"><i class="fa fa-chevron-circle-up fa-lg"></i></button>
+            </div>
+            <div class="panel-body">
+
+                <ul class="nav navbar-default nav-justified" style="padding: 0 20px;">
+                    <li class="active">
+                        <br/>
+                        <p> Answer 1</p>
+                    </li>
+                    <li>
+                        <br/>
+                        <div class="progress-bar-label pull-left"><button>7</button> &nbsp;</div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;">
+                                <span class="sr-only">70% Complete</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav navbar-default nav-justified" style="padding: 0 20px;">
+                    <li class="active">
+                        <br/>
+                        <p> Answer 2</p>
+                    </li>
+                    <li>
+                        <br/>
+                        <div class="progress-bar-label pull-left"><button>2</button> &nbsp;</div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+                                <span class="sr-only">20% Complete</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+<script src="lib/jquery/scrollup.js"></script>
+<script src="lib/bootstrap/bootstrap-datepicker.js"></script>
+<script>
+    $('.datepicker').datepicker({
+        format: 'dd-mm-yyyy',
+        startDate: '-3d',
+        autoclose: true,
+        orientation: 'right'
+    })
+</script>

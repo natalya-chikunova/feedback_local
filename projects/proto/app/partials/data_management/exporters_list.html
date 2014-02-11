@@ -1,0 +1,338 @@
+<div class="row">
+<div class="col-md-2">
+    <div ng-include src="'partials/data_sidepanel.html'"></div>
+
+</div>
+<div class="col-md-10">
+
+<ol class="breadcrumb">
+    <li><a href="#">Data Management</a></li>
+    <li><a href="#">Export</a></li>
+    <li class="active">Exporters List</li>
+</ol>
+
+<br/>
+<div class="row">
+    <div class="col-md-9">
+        <h3>Exporters List</h3>
+    </div>
+    <div class="col-md-3 text-right">
+
+        <button data-toggle="modal" data-target="#modal-export" type="button" class="btn btn-success btn-lg exporter_edit">
+            <span class="glyphicon glyphicon-plus-sign"></span>
+            Add Exporter
+        </button>
+    </div>
+</div>
+<br/>
+
+<div class="panel panel-default">
+    <div class="panel-body">
+
+        <table class="table table-striped table-hover">
+            <thead>
+            <tr class="info">
+                <th style="width: 80%">Exporter Title</th>
+                <th></th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Exporter 1</td>
+                <td><button class="btn btn-sm btn-info exporter_edit"><i class="fa fa-edit fa-lg"></i></button></td>
+                <td><button class="btn btn-sm btn-danger"><i class="fa fa-trash-o fa-lg"></i></button></td>
+            </tr>
+            <tr>
+                <td>Exporter 2</td>
+                <td><button class="btn btn-sm btn-info exporter_edit"><i class="fa fa-edit fa-lg"></i></button></td>
+                <td><button class="btn btn-sm btn-danger"><i class="fa fa-trash-o fa-lg"></i></button></td>
+            </tr>
+            <tr>
+                <td>Exporter 3</td>
+                <td><button class="btn btn-sm btn-info exporter_edit"><i class="fa fa-edit fa-lg"></i></button></td>
+                <td><button class="btn btn-sm btn-danger"><i class="fa fa-trash-o fa-lg"></i></button></td>
+            </tr>
+            <tr>
+                <td>Exporter 4</td>
+                <td><button class="btn btn-sm btn-info exporter_edit"><i class="fa fa-edit fa-lg"></i></button></td>
+                <td><button class="btn btn-sm btn-danger"><i class="fa fa-trash-o fa-lg"></i></button></td>
+            </tr>
+            <tr>
+                <td>Exporter 5</td>
+                <td><button class="btn btn-sm btn-info exporter_edit"><i class="fa fa-edit fa-lg"></i></button></td>
+                <td><button class="btn btn-sm btn-danger"><i class="fa fa-trash-o fa-lg"></i></button></td>
+            </tr>
+            <tr>
+                <td>Exporter 6</td>
+                <td><button class="btn btn-sm btn-info exporter_edit"><i class="fa fa-edit fa-lg"></i></button></td>
+                <td><button class="btn btn-sm btn-danger"><i class="fa fa-trash-o fa-lg"></i></button></td>
+            </tr>
+
+
+            </tbody>
+        </table>
+
+    </div>
+    <div class="panel-footer">
+        <ul class="pagination">
+            <li class="disabled"><a href="#">6 results</a></li>
+        </ul>
+        <ul class="pagination navbar-right">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1<span class="sr-only">(current)</span></a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="panel panel-info exporer_edit_block" style="display: none;">
+    <div class="panel-heading">Exporter Settings
+        <button type="button" class="close exporer_close_block">&times;</button>
+    </div>
+    <div class="panel-body">
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Title</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" placeholder="Enter title">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Ref unit</label>
+
+                <div class="col-sm-10">
+                    <select name="quesion_type" class="form-control">
+                        <option value="1">Ref unit 1</option>
+                        <option value="2">Ref unit 2</option>
+                        <option value="3">Ref unit 3</option>
+                        <option value="4">Ref unit 4</option>
+                        <option value="5">Ref unit 5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Delimiter</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">File type</label>
+                <div class="col-sm-3">
+                    <label class="checkbox-inline control-label">
+                        <input name="question_required" type="radio" value="option1"> CSV
+                    </label>
+                </div>
+                <div class="col-sm-3">
+                    <label class="checkbox-inline control-label">
+                        <input name="question_required" type="radio" value="option1"> XLS
+                    </label>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Status</label>
+                <div class="col-sm-3">
+                    <label class="checkbox-inline control-label">
+                        <input name="question_required" type="radio" value="option1"> All
+                    </label>
+                </div>
+                <div class="col-sm-3">
+                    <label class="checkbox-inline control-label">
+                        <input name="question_required" type="radio" value="option1"> Finished
+                    </label>
+                </div>
+                <div class="col-sm-2">
+                    <label class="checkbox-inline control-label">
+                        <input name="question_required" type="radio" value="option1"> Selected
+                    </label>
+                </div>
+                <div class="col-sm-2">
+                    <label class="checkbox-inline control-label">
+                        <input name="question_required" type="radio" value="option1"> Expired
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Filter by</label>
+                <div class="col-sm-3">
+                    <label class="checkbox-inline control-label">
+                        <input name="question_required" type="radio" value="option1"> Creation date
+                    </label>
+                </div>
+                <div class="col-sm-3">
+                    <label class="checkbox-inline control-label">
+                        <input name="question_required" type="radio" value="option1"> Response date
+                    </label>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Export type</label>
+                <div class="col-sm-3">
+                    <label class="checkbox-inline control-label">
+                        <input name="question_required" type="radio" value="option1"> Custom
+                    </label>
+                </div>
+                <div class="col-sm-3">
+                    <label class="checkbox-inline control-label">
+                        <input name="question_required" type="radio" value="option1"> Default
+                    </label>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Survey</label>
+
+                <div class="col-sm-10">
+                    <select name="quesion_type" class="form-control">
+                        <option value="1">Choose Survey</option>
+                        <option value="2">Survey title test 1</option>
+                        <option value="3">Survey title test 2</option>
+                        <option value="4">Survey title test 3</option>
+                        <option value="5">Survey title test 4</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-4 control-label"><input type="checkbox" value=""> More Exporters Settings</label>
+
+                <div class="col-sm-8 text-right">
+                    <!--  data-toggle="modal" data-target="#modal-exporter-settings-add" -->
+                    <button type="button" class="btn btn-success add-exporters-settings"><span
+                            class="glyphicon glyphicon-plus-sign"></span> Add Value
+                    </button>
+                </div>
+            </div>
+
+
+            <table class="table table-striped table-hover">
+                <thead>
+                <tr class="info">
+                    <th>Title</th>
+                    <th>Type</th>
+                    <th>Column</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody class="exporters-settings-table">
+                <tr>
+                    <td>Questionaire ID</td>
+                    <td>
+                        <select>
+                            <option value="1">System value</option>
+                            <option value="2">Import data value</option>
+                            <option value="3">Predefined value</option>
+                            <option value="4">Response by question ext...</option>
+                        </select>
+                    </td>
+                    <td>Questionaire ID</td>
+                    <td><button class="btn btn-sm btn-info"><i class="fa fa-edit fa-lg"></i></button></td>
+                    <td><button class="btn btn-sm btn-danger"><i class="fa fa-trash-o fa-lg"></i></button></td>
+                </tr>
+
+                <tr>
+                    <td>Customer ID</td>
+                    <td>
+                        <select>
+                            <option value="1">System value</option>
+                            <option value="2">Import data value</option>
+                            <option value="3">Predefined value</option>
+                            <option value="4">Response by question ext...</option>
+                        </select>
+                    </td>
+                    <td>Customer ID</td>
+                    <td><button class="btn btn-sm btn-info"><i class="fa fa-edit fa-lg"></i></button></td>
+                    <td><button class="btn btn-sm btn-danger"><i class="fa fa-trash-o fa-lg"></i></button></td>
+                </tr>
+                </tbody>
+            </table>
+
+
+        </form>
+        <br/>
+    </div>
+    <div class="panel-footer">
+        <div class="col-sm-3">
+            <p class="text-right">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
+            </p>
+        </div>
+        <div class="col-sm-9">
+            <p class="text-right">
+                <button type="button" class="btn btn-default exporer_close_block">Cancel</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+            </p>
+        </div>
+        <div class="clearfix"></div>
+
+    </div>
+</div>
+
+
+</div>
+</div>
+
+<div class="modal fade" id="modal-exporter-settings-add">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Add new settings</h4>
+            </div>
+            <div class="modal-body">
+
+                <form class="form-horizontal" role="form" name="question_form">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Title</label>
+
+                        <div class="col-sm-10">
+                            <input name="question_title" type="text" class="form-control" placeholder="Enter title">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Type</label>
+
+
+                        <div class="col-sm-10">
+                        <select name="quesion_type" class="form-control">
+                            <option value="1">System value</option>
+                            <option value="2">Import data value</option>
+                            <option value="3">Predefined value</option>
+                            <option value="4">Response by question ext...</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Column</label>
+
+                        <div class="col-sm-10">
+                            <input name="question_title" type="text" class="form-control">
+                        </div>
+                    </div>
+                 </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script src="lib/jquery/scrollup.js"></script>

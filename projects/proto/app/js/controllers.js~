@@ -1,0 +1,85 @@
+'use strict';
+
+/* Controllers */
+
+app.controller('MenuCntl', ['$scope','$route', '$routeParams', '$location', '$rootScope', '$http', '$translate','ChannelsService', 'LanguagesService', 'AuthenticationService',
+    function MenuCntl($scope, $route, $routeParams, $location, $rootScope, $http, $translate, ChannelsService, LanguagesService, AuthenticationService) {
+        console.log('MenuCntl');
+
+        $scope.changeLanguage = function (langKey) {
+            $translate.uses(langKey);
+        };
+
+        $scope.$route = $route;
+        $scope.$location = $location;
+        $scope.$routeParams = $routeParams;
+
+        $scope.channel = ChannelsService;
+
+        $scope.tabs = [
+            {
+                "id": "web",
+                "title":"Web",
+                "active":1
+            },
+            {
+                "id": "sms",
+                "title":"Sms",
+                "active":0
+            },
+            {
+                "id": "ivr",
+                "title":"Ivr",
+                "active":0
+            },
+            {
+                "id": "common",
+                "title":"Common Settings",
+                "active":0
+            }
+        ];
+        $scope.channelSelected = $scope.channel.id || 'web';
+
+        console.log(' item: '+$scope.channelSelected);
+
+        $rootScope.$on("$routeChangeStart",
+            function (event, current, previous, rejection) {
+                $rootScope.title = $route.current.title;
+            });
+        $rootScope.$on("$routeChangeSuccess",
+            function (event, current, previous, rejection) {
+                $rootScope.title = $route.current.title;
+            });
+    }])
+    .controller('HeaderController', ['$scope','$route', '$routeParams', '$location', '$rootScope', '$cookieStore', '$translate', 'AuthenticationService',
+        function HeaderController($scope, $route, $routeParams, $location, $rootScope, $cookieStore, $translate, AuthenticationService) {
+
+            $scope.showHeader = function(){
+                if($location.path() !== '/') return true;
+            }
+
+            $scope.logout = function() {
+                var check = AuthenticationService.logout();
+            }
+$scope.toog = $translate.uses();
+
+            $scope.changeLanguage = function (langKey) {
+                $translate.uses(langKey);
+$scope.toog = 'ln: '+langKey;
+            };
+
+//$scope.toggleLang = function() {
+//$translate.uses($translate.uses() === 'en') ? 'de' : 'en';
+//}
+
+
+            console.log('cookie: '+$scope.toog);
+
+            $scope.navClass = function (page) {
+                var currentRoute = $location.path().substring(1) || 'surveys_list';
+                var re = new RegExp( page, "g" );
+                var result = re.test(currentRoute);
+
+                return result ? 'active' : '';
+            };
+    }]);

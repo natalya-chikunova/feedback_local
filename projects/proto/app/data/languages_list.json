@@ -1,0 +1,47 @@
+[
+    {
+        "id": "en",
+        "title":"English",
+        "active":1
+    },
+    {
+        "id": "de",
+        "title":"German",
+        "active":1
+    },
+    {
+        "id": "fr",
+        "title":"French",
+        "active":0
+    },
+    {
+        "id": "it",
+        "title":"Italian",
+        "active":0
+    },
+    {
+        "id": "es",
+        "title":"Spanish",
+        "active":0
+    },
+    {
+        "id": "fl",
+        "title":"Flemish",
+        "active":0
+    },
+    {
+        "id": "hu",
+        "title":"Hungarian",
+        "active":0
+    },
+    {
+        "id": "ar",
+        "title":"Arabic",
+        "active":0
+    },
+    {
+        "id": "md",
+        "title":"Mandarin",
+        "active":0
+    }
+]

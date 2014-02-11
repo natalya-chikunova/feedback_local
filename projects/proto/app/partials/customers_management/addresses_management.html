@@ -1,0 +1,102 @@
+<div class="row">
+    <div class="col-md-2">
+        <div ng-include src="'partials/customers_sidepanel.html'"></div>
+
+    </div>
+    <div class="col-md-10">
+        <ol class="breadcrumb">
+            <li><a href="#">Customers Management</a></li>
+            <li class="active">Addresses Management</li>
+        </ol>
+        <h3>Addresses Management</h3>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+
+                <form class="form-horizontal" role="form" name="question_form">
+                    <div class="form-group">
+
+                        <div class="col-md-4">
+                                <input type="file" id="exampleInputFile">
+                            </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-warning"><i class="fa fa-sign-in fa-lg"></i> Import blacklist
+                            </button>
+                        </div>
+                        <div class="col-md-5 text-right">
+                            <button type="button" class="btn btn-success"><i class="fa fa-cloud-download fa-lg"></i> Export blacklist
+                            </button>
+                            </div>
+                    </div>
+                    <br/><br/>
+                    <div class="form-group">
+
+                        <div class="col-md-10">
+                                <input type="text" class="form-control" name="survey" placeholder="Search" id="autocomplete">
+                        </div>
+                        <div class="col-md-1">
+                            <button type="button" class="btn btn-default clear-search">Clear</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2">Status</label>
+                        <div class="col-sm-3">
+                            <label class="checkbox-inline control-label">
+                                <input name="question_title" type="radio"> Active
+                            </label>
+                        </div>
+                        <div class="col-sm-3">
+                            <label class="checkbox-inline control-label">
+                                <input name="question_title" type="radio"> Blacklist
+                            </label>
+                        </div>
+
+                    </div>
+                 </form>
+            </div>
+        </div>
+
+        <table class="table table-striped table-hover">
+            <thead>
+            <tr class="info">
+                <th>Invite date</th>
+                <th>Survey Title</th>
+                <th>Questionary Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>January 10, 2014 11:31 AM</td>
+                <td>Survey title test 1</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>January 10, 2014 11:31 AM</td>
+                <td>Survey title test 2</td>
+                <td>Started</td>
+            </tr>
+            <tr>
+                <td>January 10, 2014 11:31 AM</td>
+                <td>Survey title test 3</td>
+                <td>Started</td>
+            </tr>
+            <tr>
+                <td>January 10, 2014 11:31 AM</td>
+                <td>Survey title test 4</td>
+                <td>Started</td>
+            </tr>
+            <tr>
+                <td>January 10, 2014 11:31 AM</td>
+                <td>Survey title test 5</td>
+                <td>Started</td>
+            </tr>
+            </tbody>
+        </table>
+
+
+     </div>
+</div>
+
+<script src="lib/jquery/jquery.autocomplete.min.js"></script>
+<script src="lib/jquery/surveys-autocomplete.js"></script>
+<script src="lib/jquery/scrollup.js"></script>

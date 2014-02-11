@@ -1,0 +1,58 @@
+[
+    {
+        "id": "1",
+        "name":"SMS Sprachen Einstellungen 1",
+        "value":"Submit",
+        "default":"Submit",
+        "type":"text",
+        "override":1
+    },
+    {
+        "id": "2",
+        "name": "SMS Sprachen Einstellungen 2",
+        "value":"No",
+        "default":"No",
+        "type":"text",
+        "override":1
+    },
+    {
+        "id": "3",
+        "name": "SMS Sprachen Einstellungen 3",
+        "value":"Yes",
+        "default":"Yes",
+        "type":"text",
+        "override":0
+    },
+    {
+        "id": "4",
+        "name": "SMS Sprachen Einstellungen 4",
+        "value":"Unsubscribe",
+        "default":"Unsubscribe",
+        "type":"text",
+        "override":0
+    },
+    {
+        "id": "5",
+        "name": "SMS Sprachen Einstellungen 5",
+        "value":"Read online",
+        "default":"Read online",
+        "type":"text",
+        "override":0
+    },
+    {
+        "id": "6",
+        "name": "SMS Sprachen Einstellungen 6",
+        "value":"Regular expression",
+        "default":"Regular expression",
+        "type":"text",
+        "override":0
+    },
+    {
+        "id": "7",
+        "name": "SMS Sprachen Einstellungen 7",
+        "value":"Test 2",
+        "default":"Test 2",
+        "type":"text",
+        "override":0
+    }
+]
